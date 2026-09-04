@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Conformal UQ Stage 03 run configuration",
+  "type": "object",
+  "required": ["config_version", "protocol", "experiment", "datasets", "models", "seed_derivation", "paths", "outputs"],
+  "properties": {
+    "config_version": {"type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "experiment": {"type": "object", "required": ["alpha", "m_minority", "m_majority", "seeds"], "properties": {"alpha": {"const": 0.1}, "m_minority": {"const": [10, 20, 50, 100]}, "m_majority": {"const": 200}, "seeds": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"type": "integer"}}}},
+    "datasets": {"type": "object", "required": ["primary_ids", "ordered_replacement_ids"], "properties": {"primary_ids": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"type": "string"}}, "ordered_replacement_ids": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "string"}}}},
+    "models": {"type": "object", "required": ["logistic_regression", "xgboost", "tabpfn"]},
+    "seed_derivation": {"type": "object", "required": ["algorithm", "canonical_format"], "properties": {"algorithm": {"const": "sha256_first_32_bits_unsigned_big_endian"}}},
+    "outputs": {"type": "object", "required": ["results_long_path", "results_schema", "unique_key"]}
+  },
+  "additionalProperties": true
+}

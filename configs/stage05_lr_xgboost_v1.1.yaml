@@ -1,0 +1,31 @@
+config_version: v1.1.0
+artifact_status: PREPARATION_LOCK_ONLY_PENDING_D08_003
+stage: Stage 05A / Stage 08 v1.1 local cache preparation
+protocol_version: v1.1
+split_lock_path: configs/stage04_splits_v1.1.yaml
+registry:
+  path: artifacts/stage02/dataset_registry_v1.0.1.json
+  locked_primary_ids: [openml_3_kr_vs_kp, openml_24_mushroom, openml_1486_nomao, openml_1489_phoneme, openml_1590_adult, openml_4534_phishingwebsite, openml_23512_higgs, openml_23517_numerai28_6]
+seeds: [104729, 130363, 155921, 196613, 262147, 318281, 374209, 419893, 481517, 552721]
+paths:
+  split_root: artifacts/splits/v1.1
+  cache_root: artifacts/caches/v1.1
+authorized_local_models: [logistic_regression, xgboost]
+model_hyperparameters:
+  logistic_regression: {C: 1.0, penalty: l2, solver: lbfgs, max_iter: 2000, class_weight: null}
+  xgboost: {objective: binary:logistic, eval_metric: logloss, n_estimators: 300, max_depth: 6, learning_rate: 0.05, subsample: 0.8, colsample_bytree: 0.8, min_child_weight: 1, reg_lambda: 1, reg_alpha: 0, scale_pos_weight: 1, tree_method: hist, n_jobs: 1, early_stopping: false}
+tabpfn_status: USER_OPERATED_CLOUD_ONLY_SEPARATE_V11_LOCK
+execution_gate:
+  d08_003_numeric_cache_budget_receipt_required_before_execution: true
+  split_regeneration_authorized: false
+  local_cache_generation_authorized: false
+  tabpfn_cache_generation_authorized: false
+  pilot_authorized: false
+  formal_run_manifest_authorized: false
+  full_experiment_authorized: false
+output_contract:
+  allowed_artifacts: []
+  conformal_prediction_allowed: false
+  pilot_allowed: false
+  formal_outputs_allowed: false
+  prohibited_artifacts: [results_long.parquet, results_long.csv, CP_cell_JSON, figures, formal_run_manifest.json]

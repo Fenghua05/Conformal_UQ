@@ -1,0 +1,92 @@
+# Private project state and local working material
+/A/
+/.workbuddy/
+/PROJECT_STATE*.md
+/handoffs/
+/decisions/
+/reports/
+/tmp/
+/文献库/
+/文献库_md/
+/codex_skills_install_report.md
+/pdf2md.py
+/Conformal_UQ_*.md
+/Conformal_UQ_*.html
+
+# Raw data, generated artifacts, and delivery workspace
+/data/
+/artifacts/
+/delivery_stage16/
+/environment/
+/docs/superpowers/plans/
+/docs/superpowers/specs/2026-08-30-tabpfn-autodl-stage05b-design.md
+/manuscript/STAGE_13_CLAIM_EVIDENCE_OUTLINE.md
+/manuscript/stage*/
+
+# Keep the public result release allowlisted below.
+/results/*
+!/results/results_long.parquet
+!/results/results_data_dictionary.json
+!/results/results_manifest.json
+!/results/results_qc_report.md
+!/results/cell_completeness_matrix.csv
+!/results/stats/
+!/results/stats/*.csv
+!/results/stats/*.json
+
+# Keep only the selected final protocol documents public.
+/protocols/*
+!/protocols/protocol_v1.1.md
+!/protocols/dataset_lock_v1.0.md
+
+# Keep only the selected reproducibility configurations public.
+/configs/*
+!/configs/formal_run_manifest_v1.1.yaml
+!/configs/stage04_splits_v1.1.yaml
+!/configs/stage05_lr_xgboost_v1.1.yaml
+!/configs/stage05b_tabpfn_v1.1.yaml
+!/configs/results_long.schema.json
+!/configs/run_config.schema.json
+
+# Superseded cloud package; the stage08 helper is the public one.
+/cloud/tabpfn_stage05b/
+
+# Python, notebook, editor, and operating-system metadata
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Logs, archives, model files, numerical caches, and raw dataset formats
+*.log
+*.tar
+*.tar.gz
+*.zip
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.arff
+*.gz
+
+# Credentials and local secrets
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# Microsoft Office lock files
+~$*

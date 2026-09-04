@@ -1,0 +1,311 @@
+{
+  "artifact_id": "results_data_dictionary_v1.0",
+  "created_utc": "20260831T101122Z",
+  "describes": "results/results_long.parquet (authoritative merged copy of the Stage 09 formal run)",
+  "source_run_id": "20260831T091426Z_stage09-formal_8abaf7bebe64",
+  "n_rows": 1920,
+  "n_columns": 57,
+  "unit_of_record": "CP result cell = dataset x seed x model x cp_method x m_minority (m_majority=200, alpha=0.1 fixed)",
+  "structural_null_pattern": {
+    "class_conditional_cp_rows_null": [
+      "q_global",
+      "rank_global"
+    ],
+    "global_split_cp_rows_null": [
+      "q_minority",
+      "q_majority",
+      "rank_minority",
+      "rank_majority",
+      "threshold_gap",
+      "threshold_sum"
+    ],
+    "all_other_columns_non_null": true
+  },
+  "columns": [
+    {
+      "column": "alpha",
+      "dtype": "float64",
+      "description": "Conformal target miscoverage; fixed 0.1 (nominal coverage 90%)."
+    },
+    {
+      "column": "artifact_id",
+      "dtype": "object",
+      "description": "Immutable Stage 09 cell artifact identifier (run-scoped)."
+    },
+    {
+      "column": "auprc",
+      "dtype": "float64",
+      "description": "Test-set average precision of the base predictive pipeline (invariant across CP/m)."
+    },
+    {
+      "column": "auroc",
+      "dtype": "float64",
+      "description": "Test-set AUROC of the base predictive pipeline (invariant across CP/m)."
+    },
+    {
+      "column": "average_set_size",
+      "dtype": "float64",
+      "description": "Mean binary prediction-set size = singleton_rate + 2*doubleton_rate."
+    },
+    {
+      "column": "code_hash",
+      "dtype": "object",
+      "description": "SHA-256 of the producing code snapshot (model-family-specific)."
+    },
+    {
+      "column": "config_hash",
+      "dtype": "object",
+      "description": "SHA-256 of the producing configuration lock (model-family-specific)."
+    },
+    {
+      "column": "coverage_disparity",
+      "dtype": "float64",
+      "description": "|coverage_minority - coverage_majority| on the test split."
+    },
+    {
+      "column": "coverage_majority",
+      "dtype": "float64",
+      "description": "Majority-class test coverage = covered_count_majority / n_test_majority."
+    },
+    {
+      "column": "coverage_majority_wilson_high",
+      "dtype": "float64",
+      "description": "Upper endpoint of the two-sided 95% Wilson interval (z=1.959963984540054, no continuity correction, clipped to [0,1])."
+    },
+    {
+      "column": "coverage_majority_wilson_low",
+      "dtype": "float64",
+      "description": "Lower endpoint of the same Wilson interval."
+    },
+    {
+      "column": "coverage_minority",
+      "dtype": "float64",
+      "description": "Minority-class test coverage = covered_count_minority / n_test_minority."
+    },
+    {
+      "column": "coverage_minority_wilson_high",
+      "dtype": "float64",
+      "description": "Upper Wilson endpoint for minority coverage."
+    },
+    {
+      "column": "coverage_minority_wilson_low",
+      "dtype": "float64",
+      "description": "Lower Wilson endpoint for minority coverage."
+    },
+    {
+      "column": "coverage_overall",
+      "dtype": "float64",
+      "description": "Overall test coverage = covered_count_overall / n_test."
+    },
+    {
+      "column": "coverage_overall_wilson_high",
+      "dtype": "float64",
+      "description": "Upper Wilson endpoint for overall coverage."
+    },
+    {
+      "column": "coverage_overall_wilson_low",
+      "dtype": "float64",
+      "description": "Lower Wilson endpoint for overall coverage."
+    },
+    {
+      "column": "covered_count_majority",
+      "dtype": "int64",
+      "description": "Test majority samples whose true label is included in the prediction set."
+    },
+    {
+      "column": "covered_count_minority",
+      "dtype": "int64",
+      "description": "Test minority samples whose true label is included in the prediction set."
+    },
+    {
+      "column": "covered_count_overall",
+      "dtype": "int64",
+      "description": "covered_count_minority + covered_count_majority."
+    },
+    {
+      "column": "cp_method",
+      "dtype": "object",
+      "description": "global_split_cp | class_conditional_cp (Mondrian by label)."
+    },
+    {
+      "column": "created_utc",
+      "dtype": "object",
+      "description": "Stage 09 run creation time (constant for all cells)."
+    },
+    {
+      "column": "dataset_hash",
+      "dtype": "object",
+      "description": "SHA-256 of the locked raw dataset source for dataset_id."
+    },
+    {
+      "column": "dataset_id",
+      "dtype": "object",
+      "description": "Locked registry identifier (8 datasets)."
+    },
+    {
+      "column": "doubleton_rate",
+      "dtype": "float64",
+      "description": "Fraction of test sets containing both labels (binary size-2 sets)."
+    },
+    {
+      "column": "empty_rate",
+      "dtype": "float64",
+      "description": "Fraction of test sets containing no label."
+    },
+    {
+      "column": "environment_hash",
+      "dtype": "object",
+      "description": "SHA-256 of environment/environment_lock_v1.0.json (constant)."
+    },
+    {
+      "column": "formal_run_manifest_sha256",
+      "dtype": "object",
+      "description": "SHA-256 of the frozen configs/formal_run_manifest_v1.1.yaml (constant)."
+    },
+    {
+      "column": "label_mapping_hash",
+      "dtype": "object",
+      "description": "SHA-256 of the dataset label mapping (minority label identity)."
+    },
+    {
+      "column": "m_majority",
+      "dtype": "int64",
+      "description": "Fixed majority calibration count 200."
+    },
+    {
+      "column": "m_minority",
+      "dtype": "int64",
+      "description": "Minority calibration size in {10,20,50,100} (nested subsets)."
+    },
+    {
+      "column": "minority_label",
+      "dtype": "int64",
+      "description": "Numeric label of the registry-defined minority class."
+    },
+    {
+      "column": "model",
+      "dtype": "object",
+      "description": "logistic_regression | xgboost | tabpfn (predictive pipelines)."
+    },
+    {
+      "column": "model_hash",
+      "dtype": "object",
+      "description": "SHA-256 of the frozen model/pipeline specification."
+    },
+    {
+      "column": "n_cal_majority",
+      "dtype": "int64",
+      "description": "Majority calibration samples used (200)."
+    },
+    {
+      "column": "n_cal_minority",
+      "dtype": "int64",
+      "description": "Minority calibration samples used (= m_minority)."
+    },
+    {
+      "column": "n_cal_total",
+      "dtype": "int64",
+      "description": "n_cal_majority + n_cal_minority."
+    },
+    {
+      "column": "n_test",
+      "dtype": "int64",
+      "description": "Test rows = n_test_minority + n_test_majority."
+    },
+    {
+      "column": "n_test_majority",
+      "dtype": "int64",
+      "description": "Test majority rows."
+    },
+    {
+      "column": "n_test_minority",
+      "dtype": "int64",
+      "description": "Test minority rows (locked feasibility >= 75)."
+    },
+    {
+      "column": "prediction_cache_hash",
+      "dtype": "object",
+      "description": "SHA-256 of the immutable base-probability predictions.npz used by this cell."
+    },
+    {
+      "column": "protocol_version",
+      "dtype": "object",
+      "description": "Protocol version v1.1 (constant)."
+    },
+    {
+      "column": "q_global",
+      "dtype": "float64",
+      "description": "Global Split CP threshold (score scale, 1-p_y). Null for class-conditional cells."
+    },
+    {
+      "column": "q_majority",
+      "dtype": "float64",
+      "description": "Class-Conditional majority threshold. Null for global cells."
+    },
+    {
+      "column": "q_minority",
+      "dtype": "float64",
+      "description": "Class-Conditional minority threshold. Null for global cells."
+    },
+    {
+      "column": "rank_global",
+      "dtype": "float64",
+      "description": "Exact finite-sample order statistic ceil((n_global+1)(1-alpha)). Null for CC cells."
+    },
+    {
+      "column": "rank_majority",
+      "dtype": "float64",
+      "description": "ceil((200+1)(1-alpha)) = 181. Null for global cells."
+    },
+    {
+      "column": "rank_minority",
+      "dtype": "float64",
+      "description": "ceil((m+1)(1-alpha)) in {10,19,46,91}. Null for global cells."
+    },
+    {
+      "column": "results_schema_version",
+      "dtype": "object",
+      "description": "results_long schema version v1.1.0."
+    },
+    {
+      "column": "run_id",
+      "dtype": "object",
+      "description": "Immutable Stage 09 formal run identifier (constant)."
+    },
+    {
+      "column": "seed",
+      "dtype": "int64",
+      "description": "Top-level replicate seed (10 locked values)."
+    },
+    {
+      "column": "singleton_rate",
+      "dtype": "float64",
+      "description": "Fraction of test sets containing exactly one label."
+    },
+    {
+      "column": "split_hash",
+      "dtype": "object",
+      "description": "SHA-256 of the locked v1.1 split manifest for dataset x seed."
+    },
+    {
+      "column": "status",
+      "dtype": "object",
+      "description": "Per-cell execution/QC status (PASS)."
+    },
+    {
+      "column": "subset_hash",
+      "dtype": "object",
+      "description": "Canonical membership hash of the calibration subset (identical across models and CP methods within dataset x seed x m)."
+    },
+    {
+      "column": "threshold_gap",
+      "dtype": "float64",
+      "description": "Class-Conditional threshold gap abs(q_minority - q_majority). Null for global cells."
+    },
+    {
+      "column": "threshold_sum",
+      "dtype": "float64",
+      "description": "Class-Conditional threshold sum q_minority + q_majority. Null for global cells."
+    }
+  ]
+}

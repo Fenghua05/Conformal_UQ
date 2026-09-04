@@ -1,0 +1,54 @@
+config_version: v1.1.1
+artifact_status: FINAL_CACHE_LOCK_D08_003_RECEIPT_BOUND_IMPLEMENTATION_PENDING
+stage: Stage 05B / Stage 08 v1.1 user-operated TabPFN cache preparation
+protocol_version: v1.1
+split_lock_path: configs/stage04_splits_v1.1.yaml
+registry:
+  path: artifacts/stage02/dataset_registry_v1.0.1.json
+  locked_primary_ids: [openml_3_kr_vs_kp, openml_24_mushroom, openml_1486_nomao, openml_1489_phoneme, openml_1590_adult, openml_4534_phishingwebsite, openml_23512_higgs, openml_23517_numerai28_6]
+seeds: [104729, 130363, 155921, 196613, 262147, 318281, 374209, 419893, 481517, 552721]
+paths:
+  split_root: artifacts/splits/v1.1
+  cache_root: artifacts/caches/v1.1
+runtime:
+  provider: AutoDL
+  os: Ubuntu 22.04
+  device: cuda
+  gpu_name: NVIDIA GeForce RTX 4090
+  gpu_memory_gb: 24
+  tabpfn_version: 8.5.0
+  checkpoint_path: /root/autodl-fs/tabpfn-model-cache/tabpfn-v3-classifier-v3_default.ckpt
+  checkpoint_sha256: d0d865d54dfbc524f5703104be90620182dca7e5fb2c16de72e9959ea18f3988
+  train_partition_contract: full_fixed_train_partition
+  no_truncation_or_subsampling: true
+  ignore_pretraining_limits: false
+  preprocessing_contract: stage04_train_only_unscaled_onehot_dense
+safety_limits:
+  max_train_rows: 100000
+  max_transformed_features: 2000
+authorization:
+  d08_003_budget_receipt_path: decisions/D08-003_V11_CACHE_AND_PILOT_BUDGET_RECEIPT.json
+  receipt_to_lock_binding: receipt_must_match_this_exact_lock_sha256
+  cache_only_scope:
+    authorized_tabpfn_units: 80
+    datasets: 8
+    seeds_per_dataset: 10
+    probability_cache_only: true
+    conformal_prediction_allowed: false
+    pilot_output_allowed: false
+    formal_output_allowed: false
+execution_gate:
+  d08_003_numeric_cache_budget_receipt_required_before_execution: true
+  d08_003_receipt_validated_for_execution: false
+  split_regeneration_authorized: false
+  local_cache_generation_authorized: false
+  tabpfn_cache_generation_authorized: false
+  pilot_authorized: false
+  formal_run_manifest_authorized: false
+  full_experiment_authorized: false
+output_contract:
+  allowed_artifacts: [probability_cache_manifest, probability_cache_npz, cache_return_inventory, events_jsonl, failure_records]
+  conformal_prediction_allowed: false
+  pilot_allowed: false
+  formal_outputs_allowed: false
+  prohibited_artifacts: [results_long.parquet, results_long.csv, CP_cell_JSON, pilot_cells, figures, formal_run_manifest.json]

@@ -1,0 +1,39 @@
+config_version: v1.1.0
+artifact_status: PREPARATION_LOCK_ONLY_PENDING_D08_003
+stage: Stage 04 / Stage 08 v1.1 split preparation
+protocol_version: v1.1
+protocol:
+  protocol_id: conformal-uq-stage1-v1.1.0
+  protocol_version_for_seed_derivation: v1.1
+  seed_derivation_algorithm: sha256_first_32_bits_unsigned_big_endian
+  seed_derivation_canonical_format: "{protocol_version}|{dataset_id}|{base_seed}|{purpose}"
+registry:
+  path: artifacts/stage02/dataset_registry_v1.0.1.json
+  locked_primary_ids: [openml_3_kr_vs_kp, openml_24_mushroom, openml_1486_nomao, openml_1489_phoneme, openml_1590_adult, openml_4534_phishingwebsite, openml_23512_higgs, openml_23517_numerai28_6]
+seeds: [104729, 130363, 155921, 196613, 262147, 318281, 374209, 419893, 481517, 552721]
+split_fractions: {train: 0.6, calibration_pool: 0.2, test: 0.2}
+paths:
+  split_root: artifacts/splits/v1.1
+  stage_evidence_root: artifacts/stage08_v11
+  stage04_evidence_root: artifacts/stage08_v11/stage04_split_preparation
+output_identifiers:
+  artifact_id: stage04_data_preparation_v1.1
+  version: v1.1.0
+  summary_filename: stage04_summary_v1.1.json
+input_hashes:
+  protocol_sha256: 059d58b5e99062e8d6a8d6d17fa56c4778e86ab4b5c24434a87769f92453b656
+  registry_sha256: 7bb799dd82aa43acc0a03f8cb5504bac18decac7a5f4983a86a53dd168aa3c47
+execution_gate:
+  d08_003_numeric_cache_budget_receipt_required_before_execution: true
+  split_regeneration_authorized: false
+  local_cache_generation_authorized: false
+  tabpfn_cache_generation_authorized: false
+  pilot_authorized: false
+  formal_run_manifest_authorized: false
+  full_experiment_authorized: false
+output_contract:
+  allowed_artifacts: []
+  conformal_prediction_allowed: false
+  pilot_allowed: false
+  formal_outputs_allowed: false
+  prohibited_artifacts: [predictions.npz, cache_manifest.json, results_long.parquet, results_long.csv, CP_cell_JSON, figures, formal_run_manifest.json]

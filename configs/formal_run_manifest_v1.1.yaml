@@ -1,0 +1,78 @@
+config_version: v1.1.0
+artifact_id: stage09_formal_run_manifest_v1.1
+artifact_status: FROZEN_FORMAL_RUN_MANIFEST
+version: v1.1.0
+producer_stage: Stage 09 (frozen at the Stage 08 gate after the user go)
+frozen_utc: 2026-08-31T09:05:00Z
+protocol_version: v1.1
+scope: FORMAL_EIGHT_DATASET_EXPERIMENT_1920_CELLS
+stage: Formal run under protocol v1.1, authorized by D08-004
+authorization:
+  d08_004_go_receipt_path: decisions/D08-004_FORMAL_RUN_GO_RECEIPT.json
+  d08_004_receipt_sha256: e7adfe6ac93b225f76a8ab0a8f3063771d35764dd2f32ca494a040c168f86e5a
+  d08_003_receipt_path: decisions/D08-003_V11_CACHE_AND_PILOT_BUDGET_RECEIPT.json
+  d08_003_receipt_sha256: 1193096155d8f98060cf8e0b74fec983ea45d35cf290d950b9d0657f54dc9721
+grid:
+  datasets: 8
+  seeds_per_dataset: 10
+  models: 3
+  cp_methods: 2
+  m_minority_values: 4
+  expected_cells: 1920
+  alpha: 0.1
+  m_majority: 200
+  conformal_score: 1_minus_p_y
+  inclusion_rule: score_leq_threshold
+  quantile: exact_finite_sample_order_statistic_ceil_n_plus_1_times_1_minus_alpha
+registry:
+  path: artifacts/stage02/dataset_registry_v1.0.1.json
+  locked_primary_ids: [openml_3_kr_vs_kp, openml_24_mushroom, openml_1486_nomao, openml_1489_phoneme, openml_1590_adult, openml_4534_phishingwebsite, openml_23512_higgs, openml_23517_numerai28_6]
+  registry_sha256: 7bb799dd82aa43acc0a03f8cb5504bac18decac7a5f4983a86a53dd168aa3c47
+seeds: [104729, 130363, 155921, 196613, 262147, 318281, 374209, 419893, 481517, 552721]
+paths:
+  split_root: artifacts/splits/v1.1
+  cache_root: artifacts/caches/v1.1
+  run_root: artifacts/runs
+cache_lineage:
+  intake_audit_path: artifacts/stage08_v11_cloud/cache_intake_20260831T081631Z/intake_audit.json
+  intake_audit_sha256: de610f8b2ae3d85db48a00b8e3346c0c0dd343060ba0f474c5f5f0c33ae71461
+  intake_audit_verdict: PASS
+  local_config_hash: 40f29139c9db63b2118c0efb28daa37940065a33dc52ec607b3e16bea0b786f9
+  local_cache_time_code_hash: cb25b48d6b1f005f6de7bb13eb9f9dad8e789fbe7b1529b96851742b85a4eea6
+  tabpfn_config_hash: cee5c7d7da780885942a924b66276e7256469a013c9b5a0db98ba39249daa893
+  tabpfn_cache_time_code_hash: 8be59da84b507ba06778a020b2cb54bc187326421acd0f68428f71367079f9c8
+  environment_hash: 32bdba723361527405e465e7d35afe78416de5f54454ec9bac4098652aaa40b9
+  complete_cache_units: 240
+  per_model: {logistic_regression: 80, xgboost: 80, tabpfn: 80}
+input_hashes:
+  protocol_sha256: 059d58b5e99062e8d6a8d6d17fa56c4778e86ab4b5c24434a87769f92453b656
+  dataset_lock_sha256: ce4f8281d0ccc1978cf6e27b238f68d6dca87c4e7062271f7a03d0c46d967d97
+  split_lock_sha256: 516cfb79c0625b22f077b1ba2cad9f6794ea2edeabd99d00d9f9f3da5b1328a7
+  local_cache_lock_sha256: 255c7595442a269709278f737dc58c348734287b04ffc6e7a5be999de591ff36
+  tabpfn_cache_lock_sha256: 18a9b2c3c5620e5d861d3dd6bc9de1ca876fa57fb5ba5496b2deae5b9d29a94c
+  pilot_decision_sha256: a3663c5140472a3a2deb1734cf3ed9a839d764486a8d2700c5690b1a6de7b6a0
+  environment_sha256: 32bdba723361527405e465e7d35afe78416de5f54454ec9bac4098652aaa40b9
+  results_schema_sha256: d1c4a4fb672a9d137f275cfb436674a82ce6baf8c287151c10ac8417fd3027f9
+  stage08_v11_audit_sha256: c1634a1721d8ba9a1a0c86557d3fee4635067c20f457d727a40d8553378494bb
+prerequisites:
+  v11_pilot_run: artifacts/stage07_v1.1/20260831T083430Z_stage07-v11-pilot_32b7e4728b8d
+  v11_pilot_status: PASS
+  stage08_v11_independent_audit_verdict: PASS
+  gate_recommendation: CONDITIONAL-GO
+  user_explicit_go: D08-004
+execution_gate:
+  d08_004_go_receipt_required_before_execution: true
+  d08_004_receipt_validated_for_execution: false
+  intake_audit_pass_required: true
+  model_fitting_allowed: false
+  cloud_execution_allowed: false
+  cache_regeneration_allowed: false
+  protocol_change_allowed: false
+output_contract:
+  allowed_artifacts: [cell_json, results_long.parquet, results_long.csv, events_jsonl, failure_records, run_manifest, run_status, full_recomputation_qc, diagnostic_only_figures]
+  diagnostic_figures_are_not_publication_figures: true
+  scientific_interpretation_authorized: false
+  prohibited_artifacts: [formal_run_manifest_modification, v1.0_artifact_reuse, new_probability_caches, model_fitting_outputs, protocol_edits]
+invalidation:
+  status: VALID_FROZEN
+  invalidation_rule: Any change to a hash-bound input, lock, cache, or audit named in this manifest invalidates the manifest and any partial formal run; a new manifest and a new run are then required after user review.

@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a lightweight, auditable Git workflow for `E:\research` that keeps `main` aligned with the latest accepted project stage and backs it up to the configured GitHub repository.
+Create a lightweight, auditable Git workflow for this repository that keeps `main` aligned with the latest accepted project stage and backs it up to the configured GitHub repository.
 
 ## Approved approach
 
@@ -36,7 +36,7 @@ An approved small report, figure source, or final result manifest may be force-a
 
 ## Initial implementation sequence
 
-1. Initialize `E:\research` with branch `main`.
+1. Initialize the repository with branch `main`.
 2. Add a root `.gitignore` implementing the approved default exclusions.
 3. Add a concise `README.md` describing recovery inputs and the Stage 00 / Stage 01 boundary.
 4. Record the Git workflow decision in the decision log and state file.

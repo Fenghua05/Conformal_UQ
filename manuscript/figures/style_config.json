@@ -1,0 +1,123 @@
+{
+  "style_id": "conformal_uq_stage12_publication_v1.0",
+  "backend": "python/matplotlib",
+  "rc_params": {
+    "figure.dpi": 150,
+    "savefig.dpi": 600,
+    "font.family": "serif",
+    "font.serif": [
+      "Times New Roman",
+      "Times",
+      "Nimbus Roman",
+      "DejaVu Serif",
+      "serif"
+    ],
+    "mathtext.fontset": "stix",
+    "font.size": 7,
+    "axes.titlesize": 7,
+    "axes.labelsize": 7,
+    "xtick.labelsize": 6.5,
+    "ytick.labelsize": 6.5,
+    "legend.fontsize": 6,
+    "legend.title_fontsize": 6.5,
+    "axes.linewidth": 0.6,
+    "xtick.major.width": 0.6,
+    "ytick.major.width": 0.6,
+    "xtick.major.size": 2.5,
+    "ytick.major.size": 2.5,
+    "axes.spines.top": false,
+    "axes.spines.right": false,
+    "legend.frameon": false,
+    "svg.fonttype": "none",
+    "pdf.fonttype": 42,
+    "ps.fonttype": 42,
+    "axes.grid": false,
+    "savefig.bbox": "tight"
+  },
+  "png_dpi": 600,
+  "figure_sizes_inches": {
+    "fig1": [
+      3.54,
+      3.05
+    ],
+    "fig2": [
+      3.54,
+      3.05
+    ],
+    "fig3": [
+      3.54,
+      3.05
+    ],
+    "fig4": [
+      7.48,
+      2.6
+    ]
+  },
+  "method_style": {
+    "global_split_cp": {
+      "color": "#0072B2",
+      "linestyle": "-",
+      "marker": "o",
+      "label": "Global Split CP"
+    },
+    "class_conditional_cp": {
+      "color": "#D55E00",
+      "linestyle": [
+        0,
+        [
+          5,
+          2
+        ]
+      ],
+      "marker": "s",
+      "label": "Class-Conditional CP"
+    }
+  },
+  "variability_style": {
+    "sd": {
+      "color": "#0072B2",
+      "linestyle": "-",
+      "marker": "o",
+      "markerfill": true,
+      "label": "Across-seed SD"
+    },
+    "iqr": {
+      "color": "#0072B2",
+      "linestyle": [
+        0,
+        [
+          3,
+          1.5
+        ]
+      ],
+      "marker": "o",
+      "markerfill": false,
+      "label": "Across-seed IQR"
+    }
+  },
+  "dataset_thin_style": {
+    "color": "#9E9E9E",
+    "linewidth": 0.7,
+    "alpha": 0.85,
+    "marker": ".",
+    "markersize": 2.2
+  },
+  "reference_line_style": {
+    "color": "#555555",
+    "linestyle": "dotted",
+    "linewidth": 0.9
+  },
+  "region_shade": {
+    "color": "0.94",
+    "lw": 0,
+    "zorder": 0
+  },
+  "dual_encoding_note": "Every categorical contrast is encoded simultaneously in colour, line style, and (where applicable) marker fill, so figures remain readable under colour-vision deficiency and in greyscale print.",
+  "m_grid": {
+    "10": "boundary diagnostic",
+    "20": "near-boundary diagnostic",
+    "50": "main comparison",
+    "100": "main comparison"
+  },
+  "aggregation_rule": "Statistical unit = dataset (n=8). Dataset-level value = mean over the 3 predictive pipelines x 10 frozen seeds (30 CP cells per dataset x CP method x m); bold curves show the median across the 8 datasets; thin grey curves show individual datasets. Seed cells are never treated as independent units."
+}

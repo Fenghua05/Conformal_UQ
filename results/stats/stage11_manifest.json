@@ -1,0 +1,248 @@
+{
+  "artifact_id": "20260831T105752Z_stage11-analysis_0e8abfcf_manifest",
+  "stage": "Stage 11 preregistered statistical analysis",
+  "created_utc": "2026-08-31T10:58:03+00:00",
+  "status": "PASS",
+  "protocol_version": "v1.1",
+  "producer_script": "src/run_stage11_analysis.py",
+  "producer_script_sha256": "490f2a5a3a798eebbf9bdffcddf8e0fc046685efe2946555dff38fb42b62d184",
+  "analysis_plan_sha256": "0e8abfcf6c052e631d01ff7f85ee47351f5f1cffd45bf763d97abe87271224f9",
+  "run_dir": "E:\\research\\artifacts\\stage11\\20260831T105752Z_stage11-analysis_0e8abfcf",
+  "source_results_long_sha256": "d795d07c36a58619d715c18da6195d929124e43d42abafb45de2dc5134b3dcc2",
+  "input_gates": {
+    "frozen_formal_run_manifest_sha256": {
+      "status": "PASS",
+      "detail": "0690795b1ea68a148f069a44dccb09a9245d21a097e7174dbd5ec3002f24172d"
+    },
+    "results_manifest_self_closure": {
+      "status": "PASS",
+      "detail": {
+        "closure_ok": true,
+        "v1_sha256_recorded": "c116e1f1cb69abfad84e11fc641ac6a3ab11bb80eb43357dbe7431534ef7efae",
+        "v1_bytes_recorded": 5114,
+        "v1_bytes_reconstructed": 5114,
+        "v1_sha256_reconstructed": "c116e1f1cb69abfad84e11fc641ac6a3ab11bb80eb43357dbe7431534ef7efae",
+        "live_sha256": "c74b844deab8f29f0d3eca7b7447c5445b7a76f25ed992757d43134562ac6093",
+        "live_bytes": 5268,
+        "note": "recorded hash = pre-self-entry rewrite state (producer lines 812-817); CRLF line endings on disk; closure proven byte-exact"
+      }
+    },
+    "frozen_output_hashes_match_manifest": {
+      "status": "PASS",
+      "detail": {
+        "mismatches": [],
+        "append_only_prefix_verified": [
+          "artifacts/stage10/20260831T101122Z_stage10-results-freeze_63eb04da/events.jsonl"
+        ]
+      }
+    },
+    "results_long_sha256_frozen": {
+      "status": "PASS",
+      "detail": "d795d07c36a58619d715c18da6195d929124e43d42abafb45de2dc5134b3dcc2"
+    },
+    "stage10_evidence_sha256": {
+      "status": "PASS",
+      "detail": "60b0d65d8dd2865b3ce051abfdab4e5559bae4d9cfe5f04386b16353861d590f"
+    },
+    "grid_exact_1920_cells": {
+      "status": "PASS",
+      "detail": {
+        "rows": 1920,
+        "unique_keys": 1920
+      }
+    },
+    "status_pass_all_protocol_v1_1": {
+      "status": "PASS",
+      "detail": {}
+    },
+    "structural_null_pattern": {
+      "status": "PASS",
+      "detail": {}
+    },
+    "stage10_d08_endpoints_reproduced_exactly": {
+      "status": "PASS",
+      "detail": {
+        "n_endpoints": 12,
+        "mismatches": []
+      }
+    }
+  },
+  "manifest_closure": {
+    "closure_ok": true,
+    "v1_sha256_recorded": "c116e1f1cb69abfad84e11fc641ac6a3ab11bb80eb43357dbe7431534ef7efae",
+    "v1_bytes_recorded": 5114,
+    "v1_bytes_reconstructed": 5114,
+    "v1_sha256_reconstructed": "c116e1f1cb69abfad84e11fc641ac6a3ab11bb80eb43357dbe7431534ef7efae",
+    "live_sha256": "c74b844deab8f29f0d3eca7b7447c5445b7a76f25ed992757d43134562ac6093",
+    "live_bytes": 5268,
+    "note": "recorded hash = pre-self-entry rewrite state (producer lines 812-817); CRLF line endings on disk; closure proven byte-exact"
+  },
+  "preregistration": {
+    "stage": "Stage 11 preregistered statistical analysis",
+    "protocol": "protocol_v1.1 §8; STAGE_01_DECISION_TABLE D08/D09/D10",
+    "unit_of_inference": "dataset (8); seeds aggregated within dataset before any across-dataset inference; 8x10 seed cells are not 80 units",
+    "d08_estimator": "d_j = mean over complete paired contrasts within dataset (A/B: 3 pipelines x 10 seeds; C: 10 seeds); effect = median(d_j); 95% CI = 20000-replicate percentile bootstrap of the 8 d_j (D01-derived seed, Stage 10 convention)",
+    "confirmatory_families": {
+      "A": [
+        "rq1a_cc_m100_minus_m50_singleton_rate",
+        "rq1a_cc_m100_minus_m50_average_set_size"
+      ],
+      "B": [
+        "rq2b_cc_minus_global_m50_coverage_minority",
+        "rq2b_cc_minus_global_m50_coverage_majority",
+        "rq2b_cc_minus_global_m50_coverage_disparity",
+        "rq2b_cc_minus_global_m50_singleton_rate",
+        "rq2b_cc_minus_global_m50_average_set_size",
+        "rq2b_cc_minus_global_m100_coverage_minority",
+        "rq2b_cc_minus_global_m100_coverage_majority",
+        "rq2b_cc_minus_global_m100_coverage_disparity",
+        "rq2b_cc_minus_global_m100_singleton_rate",
+        "rq2b_cc_minus_global_m100_average_set_size"
+      ]
+    },
+    "exploratory_flagged": {
+      "A_secondary": [
+        "rq1a_cc_m100_minus_m50_coverage_minority",
+        "rq1a_cc_m100_minus_m50_coverage_majority",
+        "rq1a_cc_m100_minus_m50_threshold_sum",
+        "rq1a_cc_m100_minus_m50_threshold_gap",
+        "rq1a_cc_m100_minus_m50_empty_rate",
+        "rq1a_cc_m100_minus_m50_doubleton_rate"
+      ],
+      "C": [
+        "rq3c_gl_m50_xgb_minus_lr_coverage_minority",
+        "rq3c_gl_m50_xgb_minus_lr_coverage_majority",
+        "rq3c_gl_m50_xgb_minus_lr_coverage_disparity",
+        "rq3c_gl_m50_xgb_minus_lr_singleton_rate",
+        "rq3c_gl_m50_xgb_minus_lr_average_set_size",
+        "rq3c_gl_m50_xgb_minus_lr_empty_rate",
+        "rq3c_gl_m50_xgb_minus_lr_doubleton_rate",
+        "rq3c_gl_m50_tabpfn_minus_lr_coverage_minority",
+        "rq3c_gl_m50_tabpfn_minus_lr_coverage_majority",
+        "rq3c_gl_m50_tabpfn_minus_lr_coverage_disparity",
+        "rq3c_gl_m50_tabpfn_minus_lr_singleton_rate",
+        "rq3c_gl_m50_tabpfn_minus_lr_average_set_size",
+        "rq3c_gl_m50_tabpfn_minus_lr_empty_rate",
+        "rq3c_gl_m50_tabpfn_minus_lr_doubleton_rate",
+        "rq3c_gl_m50_tabpfn_minus_xgb_coverage_minority",
+        "rq3c_gl_m50_tabpfn_minus_xgb_coverage_majority",
+        "rq3c_gl_m50_tabpfn_minus_xgb_coverage_disparity",
+        "rq3c_gl_m50_tabpfn_minus_xgb_singleton_rate",
+        "rq3c_gl_m50_tabpfn_minus_xgb_average_set_size",
+        "rq3c_gl_m50_tabpfn_minus_xgb_empty_rate",
+        "rq3c_gl_m50_tabpfn_minus_xgb_doubleton_rate",
+        "rq3c_gl_m100_xgb_minus_lr_coverage_minority",
+        "rq3c_gl_m100_xgb_minus_lr_coverage_majority",
+        "rq3c_gl_m100_xgb_minus_lr_coverage_disparity",
+        "rq3c_gl_m100_xgb_minus_lr_singleton_rate",
+        "rq3c_gl_m100_xgb_minus_lr_average_set_size",
+        "rq3c_gl_m100_xgb_minus_lr_empty_rate",
+        "rq3c_gl_m100_xgb_minus_lr_doubleton_rate",
+        "rq3c_gl_m100_tabpfn_minus_lr_coverage_minority",
+        "rq3c_gl_m100_tabpfn_minus_lr_coverage_majority",
+        "rq3c_gl_m100_tabpfn_minus_lr_coverage_disparity",
+        "rq3c_gl_m100_tabpfn_minus_lr_singleton_rate",
+        "rq3c_gl_m100_tabpfn_minus_lr_average_set_size",
+        "rq3c_gl_m100_tabpfn_minus_lr_empty_rate",
+        "rq3c_gl_m100_tabpfn_minus_lr_doubleton_rate",
+        "rq3c_gl_m100_tabpfn_minus_xgb_coverage_minority",
+        "rq3c_gl_m100_tabpfn_minus_xgb_coverage_majority",
+        "rq3c_gl_m100_tabpfn_minus_xgb_coverage_disparity",
+        "rq3c_gl_m100_tabpfn_minus_xgb_singleton_rate",
+        "rq3c_gl_m100_tabpfn_minus_xgb_average_set_size",
+        "rq3c_gl_m100_tabpfn_minus_xgb_empty_rate",
+        "rq3c_gl_m100_tabpfn_minus_xgb_doubleton_rate",
+        "rq3c_cc_m50_xgb_minus_lr_coverage_minority",
+        "rq3c_cc_m50_xgb_minus_lr_coverage_majority",
+        "rq3c_cc_m50_xgb_minus_lr_coverage_disparity",
+        "rq3c_cc_m50_xgb_minus_lr_singleton_rate",
+        "rq3c_cc_m50_xgb_minus_lr_average_set_size",
+        "rq3c_cc_m50_xgb_minus_lr_empty_rate",
+        "rq3c_cc_m50_xgb_minus_lr_doubleton_rate",
+        "rq3c_cc_m50_xgb_minus_lr_threshold_sum",
+        "rq3c_cc_m50_tabpfn_minus_lr_coverage_minority",
+        "rq3c_cc_m50_tabpfn_minus_lr_coverage_majority",
+        "rq3c_cc_m50_tabpfn_minus_lr_coverage_disparity",
+        "rq3c_cc_m50_tabpfn_minus_lr_singleton_rate",
+        "rq3c_cc_m50_tabpfn_minus_lr_average_set_size",
+        "rq3c_cc_m50_tabpfn_minus_lr_empty_rate",
+        "rq3c_cc_m50_tabpfn_minus_lr_doubleton_rate",
+        "rq3c_cc_m50_tabpfn_minus_lr_threshold_sum",
+        "rq3c_cc_m50_tabpfn_minus_xgb_coverage_minority",
+        "rq3c_cc_m50_tabpfn_minus_xgb_coverage_majority",
+        "rq3c_cc_m50_tabpfn_minus_xgb_coverage_disparity",
+        "rq3c_cc_m50_tabpfn_minus_xgb_singleton_rate",
+        "rq3c_cc_m50_tabpfn_minus_xgb_average_set_size",
+        "rq3c_cc_m50_tabpfn_minus_xgb_empty_rate",
+        "rq3c_cc_m50_tabpfn_minus_xgb_doubleton_rate",
+        "rq3c_cc_m50_tabpfn_minus_xgb_threshold_sum",
+        "rq3c_cc_m100_xgb_minus_lr_coverage_minority",
+        "rq3c_cc_m100_xgb_minus_lr_coverage_majority",
+        "rq3c_cc_m100_xgb_minus_lr_coverage_disparity",
+        "rq3c_cc_m100_xgb_minus_lr_singleton_rate",
+        "rq3c_cc_m100_xgb_minus_lr_average_set_size",
+        "rq3c_cc_m100_xgb_minus_lr_empty_rate",
+        "rq3c_cc_m100_xgb_minus_lr_doubleton_rate",
+        "rq3c_cc_m100_xgb_minus_lr_threshold_sum",
+        "rq3c_cc_m100_tabpfn_minus_lr_coverage_minority",
+        "rq3c_cc_m100_tabpfn_minus_lr_coverage_majority",
+        "rq3c_cc_m100_tabpfn_minus_lr_coverage_disparity",
+        "rq3c_cc_m100_tabpfn_minus_lr_singleton_rate",
+        "rq3c_cc_m100_tabpfn_minus_lr_average_set_size",
+        "rq3c_cc_m100_tabpfn_minus_lr_empty_rate",
+        "rq3c_cc_m100_tabpfn_minus_lr_doubleton_rate",
+        "rq3c_cc_m100_tabpfn_minus_lr_threshold_sum",
+        "rq3c_cc_m100_tabpfn_minus_xgb_coverage_minority",
+        "rq3c_cc_m100_tabpfn_minus_xgb_coverage_majority",
+        "rq3c_cc_m100_tabpfn_minus_xgb_coverage_disparity",
+        "rq3c_cc_m100_tabpfn_minus_xgb_singleton_rate",
+        "rq3c_cc_m100_tabpfn_minus_xgb_average_set_size",
+        "rq3c_cc_m100_tabpfn_minus_xgb_empty_rate",
+        "rq3c_cc_m100_tabpfn_minus_xgb_doubleton_rate",
+        "rq3c_cc_m100_tabpfn_minus_xgb_threshold_sum"
+      ],
+      "note": "p-values requested by the Stage 11 instruction for A/B/C; D10 restricts formal testing to A and B; exploratory values are excluded from confirmatory claims"
+    },
+    "across_seed_bootstrap": {
+      "purpose_prefix": "across_seed_bootstrap_<dataset>|<model>|<cp>|m<m>|<metric>",
+      "status": "exploratory_descriptive_not_preregistered"
+    },
+    "wilcoxon": "exact two-sided on 8 dataset effects; zeros discarded+counted; Holm within family",
+    "n_boot": 20000
+  },
+  "outputs": {
+    "results/stats/stage11_ab_endpoints.csv": {
+      "sha256": "c3a45d399721892fbc0e0eaa0aa724b67bc4cf5b418d4fd77a1847798f2a1fe3",
+      "bytes": 5304
+    },
+    "results/stats/stage11_ab_endpoints.json": {
+      "sha256": "9e2fadcf17a859a5ca2b86c9d9a7ecf3c0b9c3790e12a59c9250898cae194e71",
+      "bytes": 50444
+    },
+    "results/stats/stage11_c_endpoints.csv": {
+      "sha256": "d92a59c299b39a3b6c3709addb0d1b39ffe10d1687bb985ad6a50a19f0a5b897",
+      "bytes": 26187
+    },
+    "results/stats/stage11_c_endpoints.json": {
+      "sha256": "82d16b47f1f42d8b753494bc24a70ac7c945bbc3a5df1f0c7b581856fffe0178",
+      "bytes": 132338
+    },
+    "results/stats/stage11_dataset_effects_long.csv": {
+      "sha256": "b1ff3c0b664ea013e142243055861d37a00caa644fa7034e0fa646d61976ff55",
+      "bytes": 182688
+    },
+    "results/stats/stage11_descriptive_cells.csv": {
+      "sha256": "045db4499ca550c567282452313268ee4a4085901802fcf71bcb5ce55e15498d",
+      "bytes": 678898
+    },
+    "results/stats/stage11_threshold_variability.csv": {
+      "sha256": "eb13c6dff4585bee6ded2b26da617faf326f4031042f9d350871c5b8f9d4feef",
+      "bytes": 48252
+    },
+    "reports/STAGE11_ANALYSIS_REPORT.md": {
+      "sha256": "3d4d5fcd9d9c570085ea82cf3262edceafaad41da2be72d89089e2c0863a6617",
+      "bytes": 21318
+    }
+  },
+  "boundary": "Read-only analysis of frozen results; no result data modified; no figures/manuscript/seed expansion; exploratory items flagged in-table; Global-coverage Wilson flag remains diagnostic-only."
+}

@@ -1,0 +1,116 @@
+{
+  "artifact_id": "20260831T101122Z_stage10-results-freeze_63eb04da_manifest",
+  "stage": "Stage 10 results freeze",
+  "created_utc": "20260831T101122Z",
+  "status": "PASS",
+  "protocol_version": "v1.1",
+  "producer_script": "src/run_stage10_freeze.py",
+  "producer_script_sha256": "63eb04da7dd97580dcb4e1d79cc5d7b9af8fe883d3660d27db2bf5c64ecd1456",
+  "source_run": {
+    "run_id": "20260831T091426Z_stage09-formal_8abaf7bebe64",
+    "path": "E:\\research\\artifacts\\runs\\20260831T091426Z_stage09-formal_8abaf7bebe64",
+    "results_long_parquet_sha256": "d795d07c36a58619d715c18da6195d929124e43d42abafb45de2dc5134b3dcc2"
+  },
+  "frozen_manifest": {
+    "path": "configs/formal_run_manifest_v1.1.yaml",
+    "sha256": "0690795b1ea68a148f069a44dccb09a9245d21a097e7174dbd5ec3002f24172d"
+  },
+  "inputs_verified": {
+    "configs/formal_run_manifest_v1.1.yaml": true,
+    "protocols/protocol_v1.1.md": true,
+    "protocols/dataset_lock_v1.0.md": true,
+    "configs/stage04_splits_v1.1.yaml": true,
+    "configs/stage05_lr_xgboost_v1.1.yaml": true,
+    "configs/stage05b_tabpfn_v1.1.yaml": true,
+    "decisions/pilot_decision_stage07_v1.1.json": true,
+    "environment/environment_lock_v1.0.json": true,
+    "configs/results_long.schema.json": true,
+    "artifacts/stage08_v11/20260831T085012Z_pilot_independent_audit/independent_audit.json": true,
+    "artifacts/stage02/dataset_registry_v1.0.1.json": true,
+    "decisions/D08-004_FORMAL_RUN_GO_RECEIPT.json": true,
+    "decisions/D08-003_V11_CACHE_AND_PILOT_BUDGET_RECEIPT.json": true,
+    "artifacts/stage08_v11_cloud/cache_intake_20260831T081631Z/intake_audit.json": true
+  },
+  "outputs": {
+    "artifacts/stage10/20260831T101122Z_stage10-results-freeze_63eb04da/events.jsonl": {
+      "sha256": "da613b7fb067eb31b24c49453ac8ca7f273aa12a9819a630a54dc3a6a77a4dcb",
+      "bytes": 11669
+    },
+    "artifacts/stage10/20260831T101122Z_stage10-results-freeze_63eb04da/results_qc_evidence.json": {
+      "sha256": "60b0d65d8dd2865b3ce051abfdab4e5559bae4d9cfe5f04386b16353861d590f",
+      "bytes": 88069
+    },
+    "artifacts/stage10/20260831T101122Z_stage10-results-freeze_63eb04da/cell_completeness_matrix.csv": {
+      "sha256": "8adb9660d3fde6cf2bb9090a27285c575592ffe43474609e77369cb91c9bd308",
+      "bytes": 14320
+    },
+    "results/results_long.parquet": {
+      "sha256": "d795d07c36a58619d715c18da6195d929124e43d42abafb45de2dc5134b3dcc2",
+      "bytes": 316989
+    },
+    "results/results_data_dictionary.json": {
+      "sha256": "b3a5fdd36300b7174159441fe3f4dd0f919c3469526f44f1d7ce468b9ec903e6",
+      "bytes": 9913
+    },
+    "results/cell_completeness_matrix.csv": {
+      "sha256": "8adb9660d3fde6cf2bb9090a27285c575592ffe43474609e77369cb91c9bd308",
+      "bytes": 14320
+    },
+    "results/results_qc_report.md": {
+      "sha256": "c97c83ed2d2de8e8885c7984d83741f03e579d9df8f5b249437619cf8e0129c6",
+      "bytes": 9600
+    },
+    "results/results_manifest.json": {
+      "sha256": "c116e1f1cb69abfad84e11fc641ac6a3ab11bb80eb43357dbe7431534ef7efae",
+      "bytes": 5114
+    }
+  },
+  "checks": {
+    "frozen_manifest_and_input_hashes_live_match": true,
+    "run_status_pass_1920_of_1920": true,
+    "run_qc_all_checks_true": true,
+    "run_manifest_binds_frozen_manifest": true,
+    "cell_file_count_1920": true,
+    "cell_json_parse_ok": true,
+    "cell_keys_unique_no_duplicates": true,
+    "cell_grid_exact_no_missing_no_extra": true,
+    "base_prediction_units_240": true,
+    "protocol_version_v1_1_all": true,
+    "results_schema_version_v1_1_0_all": true,
+    "alpha_0_1_all": true,
+    "m_majority_200_all": true,
+    "status_pass_all": true,
+    "run_id_constant": true,
+    "frozen_manifest_sha256_constant_all_rows": true,
+    "environment_hash_constant": true,
+    "config_code_lineage_per_model_family": true,
+    "created_utc_within_run_window": true,
+    "exact_order_statistic_ranks_all_cells": true,
+    "structural_null_pattern_exact": true,
+    "no_unexpected_missing_values": true,
+    "threshold_geometry_gap_sum_identities_cc": true,
+    "thresholds_in_unit_interval": true,
+    "subset_hash_identical_across_models_and_cp_methods": true,
+    "split_hash_equals_locked_v1_1_split_manifests": true,
+    "class_counts_and_feasibility_identities": true,
+    "coverage_identities_and_disparity": true,
+    "set_decomposition_identities": true,
+    "wilson_intervals_reproduced_all_5760_intervals": true,
+    "wilson_bounds_contain_estimate": true,
+    "metric_ranges_valid": true,
+    "auroc_auprc_invariant_across_cp_and_m": true,
+    "all_240_caches_rehashed_and_provenance_bound": true,
+    "dataset_hash_constant_per_dataset": true,
+    "label_mapping_hash_constant_per_dataset": true,
+    "model_hash_constant_per_base_unit": true,
+    "results_long_rows_1920": true,
+    "results_long_parquet_matches_cell_records": true,
+    "results_long_csv_parquet_key_sets_equal": true,
+    "results_long_csv_parquet_values_agree": true,
+    "global_coverage_diagnostic_reproduced": true,
+    "results_long_parquet_merged_sha256_identical_to_source": true,
+    "completeness_matrix_all_1920_complete": true
+  },
+  "failures": [],
+  "d10_seed_expansion_verdict": "NOT_TRIGGERED"
+}

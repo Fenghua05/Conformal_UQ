@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260831T141852Z_stage12-figures_501b3ccc",
+  "producer": "src/run_stage12_figures.py",
+  "style_config": "E:\\research\\manuscript\\figures\\style_config.json",
+  "captions": "E:\\research\\manuscript\\figures\\captions.md",
+  "shared_caption_preamble": "All values are generated programmatically from the frozen results (results/results_long.parquet, SHA-256 d795d07c36a58619d715c18da6195d929124e43d42abafb45de2dc5134b3dcc2; 1,920 conformal-prediction cells = 8 datasets x 10 seeds x 3 predictive pipelines x 2 CP methods x m in {10,20,50,100}; alpha = 0.1, m_majority = 200, exact finite-sample order statistic). Statistical unit = dataset (n=8). Dataset-level value = mean over the 3 predictive pipelines x 10 frozen seeds (30 CP cells per dataset x CP method x m); bold curves show the median across the 8 datasets; thin grey curves show individual datasets. Seed cells are never treated as independent units. Every plotted quantity is descriptive: no p-values or bootstrap intervals are displayed in any figure. Per-cell Wilson 95% intervals exist in the frozen results but are never pooled across seeds. The probability-scale Beta order-statistic variance is a separate diagnostic quantity on a different scale and is deliberately never overlaid on empirical threshold variability or singleton rates.",
+  "figures": [
+    {
+      "figure_number": 1,
+      "figure_id": "figure1_singleton_rate",
+      "title": "Singleton Rate Recovery",
+      "files": {
+        "svg": "E:\\research\\manuscript\\figures\\figure1_singleton_rate\\figure1_singleton_rate.svg",
+        "pdf": "E:\\research\\manuscript\\figures\\figure1_singleton_rate\\figure1_singleton_rate.pdf",
+        "png": "E:\\research\\manuscript\\figures\\figure1_singleton_rate\\figure1_singleton_rate.png"
+      },
+      "source_data": [
+        "E:\\research\\manuscript\\figures\\figure1_singleton_rate\\figure1_singleton_rate_source_data.csv",
+        "E:\\research\\manuscript\\figures\\figure1_singleton_rate\\figure1_singleton_rate_summary.csv",
+        "E:\\research\\manuscript\\figures\\figure1_singleton_rate\\figure1_singleton_rate_detail_by_model.csv"
+      ],
+      "caption": "Figure 1 | Singleton-rate recovery across minority calibration size. Singleton rate (fraction of test prediction sets containing exactly one label) as a function of the minority calibration size m, for Global Split CP (blue, solid, circles) and Class-Conditional CP (vermillion, dashed, squares). Bold curves are medians across the n = 8 datasets; thin grey curves are individual datasets (each averaged over the 3 predictive pipelines x 10 seeds). Colour, line style, and marker encode the same CP-method contrast for colour-blind and greyscale readability. Shading and tick annotations mark the boundary diagnostic (m = 10), the near-boundary diagnostic (m = 20), and the preregistered main-comparison range (m = 50/100); the degenerate m = 10 behaviour is a diagnostic, not a finding. Source data: figure1_singleton_rate/figure1_singleton_rate_source_data.csv (dataset-level values), figure1_singleton_rate_summary.csv (median across datasets), figure1_singleton_rate_detail_by_model.csv (per-pipeline detail)."
+    },
+    {
+      "figure_number": 2,
+      "figure_id": "figure2_minority_coverage",
+      "title": "Minority Coverage",
+      "files": {
+        "svg": "E:\\research\\manuscript\\figures\\figure2_minority_coverage\\figure2_minority_coverage.svg",
+        "pdf": "E:\\research\\manuscript\\figures\\figure2_minority_coverage\\figure2_minority_coverage.pdf",
+        "png": "E:\\research\\manuscript\\figures\\figure2_minority_coverage\\figure2_minority_coverage.png"
+      },
+      "source_data": [
+        "E:\\research\\manuscript\\figures\\figure2_minority_coverage\\figure2_minority_coverage_source_data.csv",
+        "E:\\research\\manuscript\\figures\\figure2_minority_coverage\\figure2_minority_coverage_summary.csv",
+        "E:\\research\\manuscript\\figures\\figure2_minority_coverage\\figure2_minority_coverage_detail_by_model.csv"
+      ],
+      "caption": "Figure 2 | Minority-class coverage across minority calibration size. Minority-class test coverage as a function of m for Global Split CP (blue, solid, circles) and Class-Conditional CP (vermillion, dashed, squares); dotted reference line marks the nominal 90% coverage target (alpha = 0.1). Aggregation, dual encoding, and boundary/main-comparison annotations as in Fig. 1. Class-Conditional CP raises minority coverage toward the nominal target relative to Global Split CP in the main-comparison range (descriptive; preregistered paired effects and intervals are reported in the Stage 11 statistical tables). Source data: figure2_minority_coverage/figure2_minority_coverage_source_data.csv, figure2_minority_coverage_summary.csv, figure2_minority_coverage_detail_by_model.csv."
+    },
+    {
+      "figure_number": 3,
+      "figure_id": "figure3_threshold_sum",
+      "title": "ThresholdSum Geometry",
+      "files": {
+        "svg": "E:\\research\\manuscript\\figures\\figure3_threshold_sum\\figure3_threshold_sum.svg",
+        "pdf": "E:\\research\\manuscript\\figures\\figure3_threshold_sum\\figure3_threshold_sum.pdf",
+        "png": "E:\\research\\manuscript\\figures\\figure3_threshold_sum\\figure3_threshold_sum.png"
+      },
+      "source_data": [
+        "E:\\research\\manuscript\\figures\\figure3_threshold_sum\\figure3_threshold_sum_source_data.csv",
+        "E:\\research\\manuscript\\figures\\figure3_threshold_sum\\figure3_threshold_sum_summary.csv",
+        "E:\\research\\manuscript\\figures\\figure3_threshold_sum\\figure3_threshold_sum_detail_by_model.csv"
+      ],
+      "caption": "Figure 3 | Threshold geometry: ThresholdSum across minority calibration size. ThresholdSum = q_minority + q_majority (nonconformity-score scale) for Class-Conditional CP as a function of m; Global Split CP has no class-specific thresholds and is therefore not shown. Dotted reference line: ThresholdSum = 1. By the binary prediction-set geometry, ThresholdSum < 1 admits potential empty prediction sets and ThresholdSum > 1 admits potential doubleton sets. Aggregation and boundary/main-comparison annotations as in Fig. 1. Source data: figure3_threshold_sum/figure3_threshold_sum_source_data.csv, figure3_threshold_sum_summary.csv, figure3_threshold_sum_detail_by_model.csv."
+    },
+    {
+      "figure_number": 4,
+      "figure_id": "figure4_threshold_variability",
+      "title": "Threshold Variability (auxiliary)",
+      "files": {
+        "svg": "E:\\research\\manuscript\\figures\\figure4_threshold_variability\\figure4_threshold_variability.svg",
+        "pdf": "E:\\research\\manuscript\\figures\\figure4_threshold_variability\\figure4_threshold_variability.pdf",
+        "png": "E:\\research\\manuscript\\figures\\figure4_threshold_variability\\figure4_threshold_variability.png"
+      },
+      "source_data": [
+        "E:\\research\\manuscript\\figures\\figure4_threshold_variability\\figure4_source_data.csv",
+        "E:\\research\\manuscript\\figures\\figure4_threshold_variability\\figure4_summary.csv"
+      ],
+      "caption": "Figure 4 | Across-seed variability of the minority threshold (auxiliary). Empirical across-seed variability of the Class-Conditional minority threshold q_minority (score scale): SD (solid, filled circles; band = min-max range across the 8 datasets) and IQR (dash-dot, open circles), shown per predictive pipeline (panels) with the median across datasets. Each dataset-level value uses n = 10 frozen seeds. Variability is heterogeneous across datasets and pipelines and does not map onto a single closed-form curve. The theoretical order-statistic uncertainty of the rank r(m) = ceil((m+1)(1-alpha)) quantile decreases conceptually with m, but its probability-scale Beta variance is a different quantity on a different scale and is deliberately not overlaid here. Boundary/main-comparison shading as in Fig. 1. Source data: figure4_threshold_variability/figure4_source_data.csv, figure4_summary.csv; values verified against the Stage 11 D09 threshold-variability table."
+    }
+  ],
+  "tables": [
+    {
+      "table_number": 1,
+      "table_id": "table1_dataset_characteristics",
+      "files": {
+        "csv": "E:\\research\\manuscript\\tables\\table1_dataset_characteristics.csv",
+        "markdown": "E:\\research\\manuscript\\tables\\table1_dataset_characteristics.md"
+      },
+      "caption": "Table 1 | Dataset characteristics. Raw size, feature composition, registry-defined minority class and ratio, and train / calibration-pool / test class counts (means over the 10 frozen v1.1 seeds) for the eight locked datasets. Derived from the locked dataset registry and the 80 v1.1 split manifests; no hand-entered values."
+    },
+    {
+      "table_number": 2,
+      "table_id": "table2_base_predictive_performance",
+      "files": {
+        "csv": "E:\\research\\manuscript\\tables\\table2_base_predictive_performance.csv",
+        "markdown": "E:\\research\\manuscript\\tables\\table2_base_predictive_performance.md"
+      },
+      "caption": "Table 2 | Base predictive performance. Test AUROC and AUPRC per dataset x predictive pipeline, mean (SD) across the 10 frozen seeds. Base performance is invariant across CP method and m by construction; the invariance is verified in the Stage 12 QA evidence."
+    },
+    {
+      "table_number": 3,
+      "table_id": "table3_main_cp_results",
+      "files": {
+        "csv": "E:\\research\\manuscript\\tables\\table3_main_cp_results.csv",
+        "markdown": "E:\\research\\manuscript\\tables\\table3_main_cp_results.md"
+      },
+      "caption": "Table 3 | Main CP results at the preregistered main-comparison sizes m = 50 and m = 100. Median (q1-q3) across the 8 dataset-level means for minority/majority coverage, singleton rate, average set size, q_minority, and ThresholdSum. m = 10 (boundary) and m = 20 (near-boundary) are diagnostics and are reported in the figure source data, not here. Global Split CP has no class-specific thresholds (dash). Descriptive statistics only; confirmatory paired effects and intervals are in the Stage 11 tables.",
+      "source_data": [
+        "E:\\research\\manuscript\\tables\\table3_main_cp_results_by_dataset.csv"
+      ]
+    }
+  ],
+  "frozen_inputs": {
+    "results/results_long.parquet": {
+      "sha256": "d795d07c36a58619d715c18da6195d929124e43d42abafb45de2dc5134b3dcc2"
+    },
+    "results/results_manifest.json": {
+      "sha256": "c74b844deab8f29f0d3eca7b7447c5445b7a76f25ed992757d43134562ac6093"
+    },
+    "configs/formal_run_manifest_v1.1.yaml": {
+      "sha256": "0690795b1ea68a148f069a44dccb09a9245d21a097e7174dbd5ec3002f24172d"
+    },
+    "results/stats/stage11_threshold_variability.csv": {
+      "sha256": "eb13c6dff4585bee6ded2b26da617faf326f4031042f9d350871c5b8f9d4feef"
+    },
+    "results/stats/stage11_ab_endpoints.csv": {
+      "sha256": "c3a45d399721892fbc0e0eaa0aa724b67bc4cf5b418d4fd77a1847798f2a1fe3"
+    },
+    "artifacts/stage02/dataset_registry_v1.0.1.json": {
+      "sha256": "7bb799dd82aa43acc0a03f8cb5504bac18decac7a5f4983a86a53dd168aa3c47"
+    }
+  },
+  "annotation_convention": {
+    "m=10": "boundary diagnostic",
+    "m=20": "near-boundary diagnostic",
+    "m=50": "main comparison",
+    "m=100": "main comparison"
+  }
+}

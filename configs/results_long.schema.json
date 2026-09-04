@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_id": "conformal-uq-results-long-v1.1.0",
+  "file": "results_long.parquet",
+  "row_semantics": "One dataset x seed x predictive pipeline x CP method x m_minority result cell. Toy rows and limited cache-validation rows are never formal research results.",
+  "unique_key": ["dataset_id", "seed", "model", "cp_method", "m_minority", "m_majority", "alpha", "protocol_version", "config_hash", "code_hash"],
+  "constraints": [
+    "No duplicate unique_key.", "alpha=0.1.", "m_minority in {10,20,50,100}; m_majority=200.",
+    "n_cal_total=n_cal_minority+n_cal_majority=m_minority+200.", "empty_rate + singleton_rate + doubleton_rate = 1 within numerical tolerance.",
+    "Each coverage equals covered_count / its recorded test denominator and carries an exact z=1.959963984540054 Wilson 95% interval without continuity correction.",
+    "Global rows provide only q_global/rank_global; Class-Conditional rows provide only q_minority/q_majority, their ranks, threshold_gap, and threshold_sum.",
+    "Formal results require cache, dataset, split, model, environment, label-mapping, config, and code provenance hashes.",
+    "TOY_ONLY_NOT_RESEARCH_RESULT cannot enter a formal results_long.parquet."
+  ],
+  "columns": [
+    {"name":"dataset_id","arrow_type":"string","nullable":false}, {"name":"seed","arrow_type":"int64","nullable":false}, {"name":"model","arrow_type":"string","nullable":false}, {"name":"cp_method","arrow_type":"string","nullable":false}, {"name":"m_minority","arrow_type":"int32","nullable":false}, {"name":"m_majority","arrow_type":"int32","nullable":false}, {"name":"alpha","arrow_type":"float64","nullable":false}, {"name":"protocol_version","arrow_type":"string","nullable":false}, {"name":"config_hash","arrow_type":"string","nullable":false}, {"name":"code_hash","arrow_type":"string","nullable":false},
+    {"name":"run_id","arrow_type":"string","nullable":false}, {"name":"artifact_id","arrow_type":"string","nullable":false}, {"name":"results_schema_version","arrow_type":"string","nullable":false}, {"name":"status","arrow_type":"string","nullable":false}, {"name":"minority_label","arrow_type":"int8","nullable":false},
+    {"name":"n_cal_total","arrow_type":"int64","nullable":false}, {"name":"n_cal_minority","arrow_type":"int64","nullable":false}, {"name":"n_cal_majority","arrow_type":"int64","nullable":false}, {"name":"rank_global","arrow_type":"int64","nullable":true}, {"name":"rank_minority","arrow_type":"int64","nullable":true}, {"name":"rank_majority","arrow_type":"int64","nullable":true},
+    {"name":"auroc","arrow_type":"float64","nullable":true}, {"name":"auprc","arrow_type":"float64","nullable":true},
+    {"name":"coverage_overall","arrow_type":"float64","nullable":true}, {"name":"coverage_minority","arrow_type":"float64","nullable":true}, {"name":"coverage_majority","arrow_type":"float64","nullable":true}, {"name":"coverage_disparity","arrow_type":"float64","nullable":true}, {"name":"covered_count_overall","arrow_type":"int64","nullable":true}, {"name":"covered_count_minority","arrow_type":"int64","nullable":true}, {"name":"covered_count_majority","arrow_type":"int64","nullable":true},
+    {"name":"coverage_overall_wilson_low","arrow_type":"float64","nullable":true}, {"name":"coverage_overall_wilson_high","arrow_type":"float64","nullable":true}, {"name":"coverage_minority_wilson_low","arrow_type":"float64","nullable":true}, {"name":"coverage_minority_wilson_high","arrow_type":"float64","nullable":true}, {"name":"coverage_majority_wilson_low","arrow_type":"float64","nullable":true}, {"name":"coverage_majority_wilson_high","arrow_type":"float64","nullable":true},
+    {"name":"singleton_rate","arrow_type":"float64","nullable":true}, {"name":"average_set_size","arrow_type":"float64","nullable":true}, {"name":"empty_rate","arrow_type":"float64","nullable":true}, {"name":"doubleton_rate","arrow_type":"float64","nullable":true}, {"name":"q_global","arrow_type":"float64","nullable":true}, {"name":"q_minority","arrow_type":"float64","nullable":true}, {"name":"q_majority","arrow_type":"float64","nullable":true}, {"name":"threshold_gap","arrow_type":"float64","nullable":true}, {"name":"threshold_sum","arrow_type":"float64","nullable":true},
+    {"name":"n_test","arrow_type":"int64","nullable":false}, {"name":"n_test_minority","arrow_type":"int64","nullable":false}, {"name":"n_test_majority","arrow_type":"int64","nullable":false}, {"name":"subset_hash","arrow_type":"string","nullable":false},
+    {"name":"split_hash","arrow_type":"string","nullable":false}, {"name":"dataset_hash","arrow_type":"string","nullable":false}, {"name":"environment_hash","arrow_type":"string","nullable":false}, {"name":"model_hash","arrow_type":"string","nullable":false}, {"name":"prediction_cache_hash","arrow_type":"string","nullable":false}, {"name":"label_mapping_hash","arrow_type":"string","nullable":false}, {"name":"created_utc","arrow_type":"timestamp[us, tz=UTC]","nullable":false}
+  ]
+}

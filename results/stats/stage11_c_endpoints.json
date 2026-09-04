@@ -1,0 +1,3512 @@
+[
+  {
+    "endpoint_tag": "rq3c_gl_m50_xgb_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.016013071895424825,
+      "openml_24_mushroom": -0.04763729246487867,
+      "openml_1486_nomao": -0.00482478415439308,
+      "openml_1489_phoneme": 0.09116719242902208,
+      "openml_1590_adult": 0.011676646706586812,
+      "openml_4534_phishingwebsite": 0.014489795918367354,
+      "openml_23512_higgs": 0.06969172525689563,
+      "openml_23517_numerai28_6": 0.03723248006714226
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.01525143390689609,
+    "ci95_low": -0.00482478415439308,
+    "ci95_high": 0.06969172525689563,
+    "ci_width": 0.0745165094112887,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_xgb_minus_lr_coverage_minority",
+      "seed_uint32": 33433547
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_xgb_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.002694610778443118,
+      "openml_24_mushroom": 0.012589073634204284,
+      "openml_1486_nomao": 0.004488220958570255,
+      "openml_1489_phoneme": -0.01308900523560209,
+      "openml_1590_adult": -0.0016821423765307486,
+      "openml_4534_phishingwebsite": -0.009666937449228263,
+      "openml_23512_higgs": -0.01437530149541727,
+      "openml_23517_numerai28_6": 0.0016132346896835293
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -3.4453843423609644e-05,
+    "ci95_low": -0.01308900523560209,
+    "ci95_high": 0.004488220958570255,
+    "ci_width": 0.017577226194172346,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_xgb_minus_lr_coverage_majority",
+      "seed_uint32": 3072398950
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_xgb_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.012324370866110901,
+      "openml_24_mushroom": 0.04161835682844776,
+      "openml_1486_nomao": 0.009313005112963336,
+      "openml_1489_phoneme": -0.10425619766462417,
+      "openml_1590_adult": -0.01335878908311756,
+      "openml_4534_phishingwebsite": -0.024156733367595617,
+      "openml_23512_higgs": -0.0840670267523129,
+      "openml_23517_numerai28_6": -0.03561924537745873
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.01875776122535659,
+    "ci95_low": -0.0840670267523129,
+    "ci95_high": 0.009313005112963336,
+    "ci_width": 0.09338003186527623,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_xgb_minus_lr_coverage_disparity",
+      "seed_uint32": 198993517
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_xgb_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0010937500000000044,
+      "openml_24_mushroom": -0.01643076923076926,
+      "openml_1486_nomao": -0.011286812708544891,
+      "openml_1489_phoneme": 0.2369102682701203,
+      "openml_1590_adult": 0.04944211280581429,
+      "openml_4534_phishingwebsite": -0.025915875169606493,
+      "openml_23512_higgs": 0.1379245283018868,
+      "openml_23517_numerai28_6": -0.04931997508305649
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.006190281354272448,
+    "ci95_low": -0.025915875169606493,
+    "ci95_high": 0.1379245283018868,
+    "ci_width": 0.1638404034714933,
+    "direction_count": {
+      "positive": 3,
+      "negative": 5,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.7421875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_xgb_minus_lr_singleton_rate",
+      "seed_uint32": 2576907715
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_xgb_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0010937500000000044,
+      "openml_24_mushroom": -0.01643076923076926,
+      "openml_1486_nomao": -0.011286812708544891,
+      "openml_1489_phoneme": -0.2642923219241443,
+      "openml_1590_adult": -0.049708260825058914,
+      "openml_4534_phishingwebsite": -0.025915875169606493,
+      "openml_23512_higgs": -0.13792452830188678,
+      "openml_23517_numerai28_6": 0.04931997508305654
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.021173322200187875,
+    "ci95_low": -0.13792452830188678,
+    "ci95_high": -0.0010937500000000044,
+    "ci_width": 0.13683077830188678,
+    "direction_count": {
+      "positive": 1,
+      "negative": 7,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.078125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_xgb_minus_lr_average_set_size",
+      "seed_uint32": 1920776149
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_xgb_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0010937499999999997,
+      "openml_24_mushroom": 0.016430769230769228,
+      "openml_1486_nomao": 0.011286812708544902,
+      "openml_1489_phoneme": 0.013691026827012027,
+      "openml_1590_adult": 0.00013307400962227456,
+      "openml_4534_phishingwebsite": 0.02591587516960651,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0061902813542724505,
+    "ci95_low": 0.0,
+    "ci95_high": 0.016430769230769228,
+    "ci_width": 0.016430769230769228,
+    "direction_count": {
+      "positive": 6,
+      "negative": 0,
+      "zero": 2
+    },
+    "wilcoxon_p_exact_two_sided": 0.03125,
+    "wilcoxon_n_zero_discarded": 2,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_xgb_minus_lr_empty_rate",
+      "seed_uint32": 1578661265
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_xgb_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.25060129509713225,
+      "openml_1590_adult": -0.04957518681543658,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.1379245283018868,
+      "openml_23517_numerai28_6": 0.0493199750830565
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.1379245283018868,
+    "ci95_high": 0.0,
+    "ci_width": 0.1379245283018868,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_xgb_minus_lr_doubleton_rate",
+      "seed_uint32": 2575204575
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.01797385620915032,
+      "openml_24_mushroom": 0.08646232439335887,
+      "openml_1486_nomao": -0.009598781107160993,
+      "openml_1489_phoneme": 0.07602523659305993,
+      "openml_1590_adult": 0.007741659538066725,
+      "openml_4534_phishingwebsite": 0.009591836734693892,
+      "openml_23512_higgs": 0.07540292049756625,
+      "openml_23517_numerai28_6": 0.006514897188417979
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.013782846471922105,
+    "ci95_low": 0.006514897188417979,
+    "ci95_high": 0.07602523659305993,
+    "ci_width": 0.06951033940464195,
+    "direction_count": {
+      "positive": 7,
+      "negative": 1,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0546875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_lr_coverage_minority",
+      "seed_uint32": 2113649595
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0008982035928143839,
+      "openml_24_mushroom": 0.09572446555819478,
+      "openml_1486_nomao": 0.00580828594638505,
+      "openml_1489_phoneme": -0.02041884816753927,
+      "openml_1590_adult": 0.0009419997308572125,
+      "openml_4534_phishingwebsite": -0.017140536149471985,
+      "openml_23512_higgs": -0.011384466956102268,
+      "openml_23517_numerai28_6": 0.0029284833538841147
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0009201016618357982,
+    "ci95_low": -0.017140536149471985,
+    "ci95_high": 0.00580828594638505,
+    "ci_width": 0.022948822095857035,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 1.0,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_lr_coverage_majority",
+      "seed_uint32": 1789685213
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0026535164964189284,
+      "openml_24_mushroom": -0.009126236565011225,
+      "openml_1486_nomao": 0.015407067053546043,
+      "openml_1489_phoneme": -0.09644408476059921,
+      "openml_1590_adult": -0.006799659807209512,
+      "openml_4534_phishingwebsite": -0.026732372884165877,
+      "openml_23512_higgs": -0.08678738745366851,
+      "openml_23517_numerai28_6": -0.0035864138345338636
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.007962948186110368,
+    "ci95_low": -0.08678738745366851,
+    "ci95_high": 0.0026535164964189284,
+    "ci_width": 0.08944090395008744,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.109375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_lr_coverage_disparity",
+      "seed_uint32": 669122165
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0014062499999999978,
+      "openml_24_mushroom": 0.09126153846153844,
+      "openml_1486_nomao": -0.012752067314667038,
+      "openml_1489_phoneme": 0.2250693802035153,
+      "openml_1590_adult": 0.017678370355205218,
+      "openml_4534_phishingwebsite": -0.0365445499773858,
+      "openml_23512_higgs": 0.15832738398776133,
+      "openml_23517_numerai28_6": -0.00959821428571429
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.00813606017760261,
+    "ci95_low": -0.012752067314667038,
+    "ci95_high": 0.15832738398776133,
+    "ci_width": 0.17107945130242838,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3828125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_lr_singleton_rate",
+      "seed_uint32": 1137844200
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0014062499999999978,
+      "openml_24_mushroom": 0.09126153846153844,
+      "openml_1486_nomao": -0.012752067314667038,
+      "openml_1489_phoneme": -0.32701202590194267,
+      "openml_1590_adult": -0.017678370355205274,
+      "openml_4534_phishingwebsite": -0.0365445499773858,
+      "openml_23512_higgs": -0.1583273839877614,
+      "openml_23517_numerai28_6": 0.009598214285714302
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.015215218834936156,
+    "ci95_low": -0.1583273839877614,
+    "ci95_high": 0.009598214285714302,
+    "ci_width": 0.1679255982734757,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1953125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_lr_average_set_size",
+      "seed_uint32": 2128631743
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0014062499999999984,
+      "openml_24_mushroom": -0.09126153846153846,
+      "openml_1486_nomao": 0.012752067314667053,
+      "openml_1489_phoneme": 0.0509713228492137,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.0365445499773858,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0007031249999999992,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0365445499773858,
+    "ci_width": 0.0365445499773858,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_lr_empty_rate",
+      "seed_uint32": 2385526335
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.27604070305272893,
+      "openml_1590_adult": -0.01767837035520524,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.15832738398776133,
+      "openml_23517_numerai28_6": 0.009598214285714302
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.15832738398776133,
+    "ci95_high": 0.0,
+    "ci_width": 0.15832738398776133,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_lr_doubleton_rate",
+      "seed_uint32": 1362084040
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_xgb_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0019607843137254945,
+      "openml_24_mushroom": 0.1340996168582375,
+      "openml_1486_nomao": -0.004773996952767911,
+      "openml_1489_phoneme": -0.01514195583596215,
+      "openml_1590_adult": -0.003934987168520088,
+      "openml_4534_phishingwebsite": -0.004897959183673461,
+      "openml_23512_higgs": 0.00571119524067063,
+      "openml_23517_numerai28_6": -0.03071758287872428
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.004354492060644,
+    "ci95_low": -0.01514195583596215,
+    "ci95_high": 0.00571119524067063,
+    "ci_width": 0.02085315107663278,
+    "direction_count": {
+      "positive": 3,
+      "negative": 5,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_xgb_coverage_minority",
+      "seed_uint32": 471175226
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_xgb_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0017964071856287345,
+      "openml_24_mushroom": 0.0831353919239905,
+      "openml_1486_nomao": 0.0013200649878147952,
+      "openml_1489_phoneme": -0.007329842931937181,
+      "openml_1590_adult": 0.0026241421073879613,
+      "openml_4534_phishingwebsite": -0.007473598700243722,
+      "openml_23512_higgs": 0.0029908345393150015,
+      "openml_23517_numerai28_6": 0.0013152486642005856
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0013176568260076904,
+    "ci95_low": -0.007329842931937181,
+    "ci95_high": 0.0029908345393150015,
+    "ci_width": 0.010320677471252182,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.84375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_xgb_coverage_majority",
+      "seed_uint32": 1857030376
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_xgb_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.01497788736252983,
+      "openml_24_mushroom": -0.05074459339345898,
+      "openml_1486_nomao": 0.006094061940582707,
+      "openml_1489_phoneme": 0.007812112904024971,
+      "openml_1590_adult": 0.0065591292759080485,
+      "openml_4534_phishingwebsite": -0.0025756395165702608,
+      "openml_23512_higgs": -0.0027203607013556287,
+      "openml_23517_numerai28_6": 0.03203283154292487
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.006326595608245378,
+    "ci95_low": -0.0027203607013556287,
+    "ci95_high": 0.01497788736252983,
+    "ci_width": 0.01769824806388546,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3828125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_xgb_coverage_disparity",
+      "seed_uint32": 1252921680
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_xgb_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.00031249999999999334,
+      "openml_24_mushroom": 0.10769230769230771,
+      "openml_1486_nomao": -0.001465254606122146,
+      "openml_1489_phoneme": -0.011840888066605016,
+      "openml_1590_adult": -0.03176374245060907,
+      "openml_4534_phishingwebsite": -0.010628674807779303,
+      "openml_23512_higgs": 0.020402855685874542,
+      "openml_23517_numerai28_6": 0.0397217607973422
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0008888773030610697,
+    "ci95_low": -0.011840888066605016,
+    "ci95_high": 0.0397217607973422,
+    "ci_width": 0.051562648863947215,
+    "direction_count": {
+      "positive": 3,
+      "negative": 5,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.84375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_xgb_singleton_rate",
+      "seed_uint32": 1061967882
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_xgb_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.00031249999999999334,
+      "openml_24_mushroom": 0.10769230769230771,
+      "openml_1486_nomao": -0.001465254606122146,
+      "openml_1489_phoneme": -0.06271970397779836,
+      "openml_1590_adult": 0.03202989046985364,
+      "openml_4534_phishingwebsite": -0.010628674807779303,
+      "openml_23512_higgs": -0.020402855685874587,
+      "openml_23517_numerai28_6": -0.03972176079734224
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.006046964706950725,
+    "ci95_low": -0.03972176079734224,
+    "ci95_high": 0.03202989046985364,
+    "ci_width": 0.07175165126719588,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.546875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_xgb_average_set_size",
+      "seed_uint32": 3653839088
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_xgb_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.00031249999999999887,
+      "openml_24_mushroom": -0.10769230769230768,
+      "openml_1486_nomao": 0.001465254606122151,
+      "openml_1489_phoneme": 0.03728029602220167,
+      "openml_1590_adult": -0.00013307400962227456,
+      "openml_4534_phishingwebsite": 0.010628674807779282,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.00015624999999999943,
+    "ci95_low": -0.00013307400962227456,
+    "ci95_high": 0.010628674807779282,
+    "ci_width": 0.010761748817401556,
+    "direction_count": {
+      "positive": 4,
+      "negative": 2,
+      "zero": 2
+    },
+    "wilcoxon_p_exact_two_sided": 0.5625,
+    "wilcoxon_n_zero_discarded": 2,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_xgb_empty_rate",
+      "seed_uint32": 2560978172
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m50_tabpfn_minus_xgb_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.025439407955596665,
+      "openml_1590_adult": 0.03189681646023135,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.02040285568587456,
+      "openml_23517_numerai28_6": -0.0397217607973422
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.025439407955596665,
+    "ci95_high": 0.0,
+    "ci_width": 0.025439407955596665,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m50_tabpfn_minus_xgb_doubleton_rate",
+      "seed_uint32": 434551922
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_xgb_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.016666666666666663,
+      "openml_24_mushroom": -0.04291187739463602,
+      "openml_1486_nomao": 0.005485017775520551,
+      "openml_1489_phoneme": 0.06340694006309147,
+      "openml_1590_adult": -0.005816937553464496,
+      "openml_4534_phishingwebsite": 0.017448979591836767,
+      "openml_23512_higgs": 0.05375878853434287,
+      "openml_23517_numerai28_6": 0.018946705832983645
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.017057823129251713,
+    "ci95_low": -0.005816937553464496,
+    "ci95_high": 0.04117682294803756,
+    "ci_width": 0.04699376050150206,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1953125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_xgb_minus_lr_coverage_minority",
+      "seed_uint32": 4287587302
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_xgb_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.002095808383233533,
+      "openml_24_mushroom": 0.01650831353919241,
+      "openml_1486_nomao": 0.0073923639317628135,
+      "openml_1489_phoneme": -0.01937172774869108,
+      "openml_1590_adult": -0.0027856277755349155,
+      "openml_4534_phishingwebsite": -0.006173842404549157,
+      "openml_23512_higgs": -0.018359864930053073,
+      "openml_23517_numerai28_6": -0.008816276202219475
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.004479735090042037,
+    "ci95_low": -0.018359864930053073,
+    "ci95_high": 0.0073923639317628135,
+    "ci_width": 0.025752228861815885,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_xgb_minus_lr_coverage_majority",
+      "seed_uint32": 3763621393
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_xgb_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.01652381511486828,
+      "openml_24_mushroom": 0.03843051422296245,
+      "openml_1486_nomao": 0.0019073461562422623,
+      "openml_1489_phoneme": -0.08277866781178256,
+      "openml_1590_adult": 0.0030313097779295804,
+      "openml_4534_phishingwebsite": -0.023622821996385924,
+      "openml_23512_higgs": -0.07211865346439594,
+      "openml_23517_numerai28_6": -0.02776298203520312
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0200733185556271,
+    "ci95_low": -0.07211865346439594,
+    "ci95_high": 0.0030313097779295804,
+    "ci_width": 0.07514996324232552,
+    "direction_count": {
+      "positive": 3,
+      "negative": 5,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_xgb_minus_lr_coverage_disparity",
+      "seed_uint32": 3293750966
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_xgb_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.00296875000000002,
+      "openml_24_mushroom": -0.012123076923076926,
+      "openml_1486_nomao": -0.00863194545190774,
+      "openml_1489_phoneme": 0.2993524514338575,
+      "openml_1590_adult": 0.06952605179649915,
+      "openml_4534_phishingwebsite": -0.022026232473993657,
+      "openml_23512_higgs": 0.16422233554309024,
+      "openml_23517_numerai28_6": -0.019502699335548174
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.00580034772595388,
+    "ci95_low": -0.019502699335548174,
+    "ci95_high": 0.16422233554309024,
+    "ci_width": 0.18372503487863842,
+    "direction_count": {
+      "positive": 3,
+      "negative": 5,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.7421875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_xgb_minus_lr_singleton_rate",
+      "seed_uint32": 62937623
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_xgb_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.00296875000000002,
+      "openml_24_mushroom": -0.012123076923076926,
+      "openml_1486_nomao": -0.00863194545190774,
+      "openml_1489_phoneme": -0.3050878815911194,
+      "openml_1590_adult": -0.06952605179649914,
+      "openml_4534_phishingwebsite": -0.022026232473993657,
+      "openml_23512_higgs": -0.16422233554309024,
+      "openml_23517_numerai28_6": 0.019502699335548178
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.01707465469853529,
+    "ci95_low": -0.16422233554309024,
+    "ci95_high": -0.00296875000000002,
+    "ci_width": 0.16125358554309022,
+    "direction_count": {
+      "positive": 1,
+      "negative": 7,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0546875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_xgb_minus_lr_average_set_size",
+      "seed_uint32": 2586899361
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_xgb_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.002968749999999999,
+      "openml_24_mushroom": 0.01212307692307692,
+      "openml_1486_nomao": 0.008631945451907732,
+      "openml_1489_phoneme": 0.0028677150786308976,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.022026232473993667,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0029182325393154484,
+    "ci95_low": 0.0,
+    "ci95_high": 0.01212307692307692,
+    "ci_width": 0.01212307692307692,
+    "direction_count": {
+      "positive": 5,
+      "negative": 0,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.0625,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_xgb_minus_lr_empty_rate",
+      "seed_uint32": 61051606
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_xgb_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.30222016651248845,
+      "openml_1590_adult": -0.06952605179649912,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.16422233554309026,
+      "openml_23517_numerai28_6": 0.019502699335548178
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.16422233554309026,
+    "ci95_high": 0.0,
+    "ci_width": 0.16422233554309026,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_xgb_minus_lr_doubleton_rate",
+      "seed_uint32": 1419843447
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.021241830065359478,
+      "openml_24_mushroom": 0.08850574712643677,
+      "openml_1486_nomao": -0.0070086338242763,
+      "openml_1489_phoneme": 0.056151419558359596,
+      "openml_1590_adult": -0.00038494439692043914,
+      "openml_4534_phishingwebsite": 0.01061224489795919,
+      "openml_23512_higgs": 0.06055164954029205,
+      "openml_23517_numerai28_6": 0.0033571128829206877
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.015927037481659335,
+    "ci95_low": -0.00038494439692043914,
+    "ci95_high": 0.06055164954029205,
+    "ci_width": 0.06093659393721249,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0546875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_lr_coverage_minority",
+      "seed_uint32": 887118282
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.002395209580838309,
+      "openml_24_mushroom": 0.09821852731591449,
+      "openml_1486_nomao": 0.006295694557270515,
+      "openml_1489_phoneme": -0.024345549738219906,
+      "openml_1590_adult": -0.0005786569775265704,
+      "openml_4534_phishingwebsite": -0.013972380178716482,
+      "openml_23512_higgs": -0.015677761698022197,
+      "openml_23517_numerai28_6": -0.0005240443896423974
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0014869332791824397,
+    "ci95_low": -0.015677761698022197,
+    "ci95_high": 0.006295694557270515,
+    "ci_width": 0.021973456255292713,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.4609375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_lr_coverage_majority",
+      "seed_uint32": 2048548519
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.005923447223200662,
+      "openml_24_mushroom": -0.0110572649806002,
+      "openml_1486_nomao": 0.013304328381546816,
+      "openml_1489_phoneme": -0.0804969692965795,
+      "openml_1590_adult": -0.00019371258060613128,
+      "openml_4534_phishingwebsite": -0.02458462507667567,
+      "openml_23512_higgs": -0.07622941123831425,
+      "openml_23517_numerai28_6": -0.003881157272563085
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.008490356101900432,
+    "ci95_low": -0.07622941123831425,
+    "ci95_high": -0.00019371258060613128,
+    "ci_width": 0.07603569865770812,
+    "direction_count": {
+      "positive": 1,
+      "negative": 7,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.078125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_lr_coverage_disparity",
+      "seed_uint32": 1322825113
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0010937500000000155,
+      "openml_24_mushroom": 0.09353846153846154,
+      "openml_1486_nomao": -0.014536486290439566,
+      "openml_1489_phoneme": 0.31461609620721553,
+      "openml_1590_adult": 0.027556556454089453,
+      "openml_4534_phishingwebsite": -0.034147444595205786,
+      "openml_23512_higgs": 0.1834625191228965,
+      "openml_23517_numerai28_6": -0.0022580980066445183
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.013231403227044719,
+    "ci95_low": -0.014536486290439566,
+    "ci95_high": 0.1834625191228965,
+    "ci_width": 0.19799900541333607,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3828125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_lr_singleton_rate",
+      "seed_uint32": 3182526488
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0010937500000000155,
+      "openml_24_mushroom": 0.09353846153846154,
+      "openml_1486_nomao": -0.014536486290439566,
+      "openml_1489_phoneme": -0.3656799259944496,
+      "openml_1590_adult": -0.02755655645408952,
+      "openml_4534_phishingwebsite": -0.034147444595205786,
+      "openml_23512_higgs": -0.1834625191228965,
+      "openml_23517_numerai28_6": 0.0022580980066445157
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.021046521372264544,
+    "ci95_low": -0.1834625191228965,
+    "ci95_high": 0.0022580980066445157,
+    "ci_width": 0.185720617129541,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1953125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_lr_average_set_size",
+      "seed_uint32": 2451983255
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0010937499999999975,
+      "openml_24_mushroom": -0.09353846153846154,
+      "openml_1486_nomao": 0.014536486290439576,
+      "openml_1489_phoneme": 0.025531914893617023,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.034147444595205786,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0005468749999999988,
+    "ci95_low": 0.0,
+    "ci95_high": 0.025531914893617023,
+    "ci_width": 0.025531914893617023,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_lr_empty_rate",
+      "seed_uint32": 593535296
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.3401480111008326,
+      "openml_1590_adult": -0.027556556454089463,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.1834625191228965,
+      "openml_23517_numerai28_6": 0.0022580980066445266
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.1834625191228965,
+    "ci95_high": 0.0,
+    "ci_width": 0.1834625191228965,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_lr_doubleton_rate",
+      "seed_uint32": 3547614213
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_xgb_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.004575163398692817,
+      "openml_24_mushroom": 0.13141762452107278,
+      "openml_1486_nomao": -0.01249365159979685,
+      "openml_1489_phoneme": -0.007255520504731883,
+      "openml_1590_adult": 0.005431993156544057,
+      "openml_4534_phishingwebsite": -0.0068367346938775775,
+      "openml_23512_higgs": 0.00679286100594918,
+      "openml_23517_numerai28_6": -0.015589592950062958
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0011307856475923804,
+    "ci95_low": -0.01249365159979685,
+    "ci95_high": 0.00679286100594918,
+    "ci_width": 0.019286512605746032,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_xgb_coverage_minority",
+      "seed_uint32": 1468099002
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_xgb_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0002994011976047761,
+      "openml_24_mushroom": 0.08171021377672208,
+      "openml_1486_nomao": -0.0010966693744922985,
+      "openml_1489_phoneme": -0.004973821989528826,
+      "openml_1590_adult": 0.002206970798008345,
+      "openml_4534_phishingwebsite": -0.007798537774167324,
+      "openml_23512_higgs": 0.0026821032320308745,
+      "openml_23517_numerai28_6": 0.008292231812577077
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0009537848002017844,
+    "ci95_low": -0.004973821989528826,
+    "ci95_high": 0.008292231812577077,
+    "ci_width": 0.013266053802105902,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_xgb_coverage_majority",
+      "seed_uint32": 3453982855
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_xgb_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.010600367891667618,
+      "openml_24_mushroom": -0.049487779203562655,
+      "openml_1486_nomao": 0.011396982225304553,
+      "openml_1489_phoneme": 0.002281698515203057,
+      "openml_1590_adult": -0.0032250223585357117,
+      "openml_4534_phishingwebsite": -0.0009618030802897471,
+      "openml_23512_higgs": -0.004110757773918306,
+      "openml_23517_numerai28_6": 0.023881824762640037
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0006599477174566549,
+    "ci95_low": -0.004110757773918306,
+    "ci95_high": 0.011396982225304553,
+    "ci_width": 0.015507739999222859,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.84375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_xgb_coverage_disparity",
+      "seed_uint32": 3648111421
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_xgb_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0018750000000000045,
+      "openml_24_mushroom": 0.10566153846153847,
+      "openml_1486_nomao": -0.0059045408385318245,
+      "openml_1489_phoneme": 0.015263644773357999,
+      "openml_1590_adult": -0.04196949534240969,
+      "openml_4534_phishingwebsite": -0.012121212121212133,
+      "openml_23512_higgs": 0.019240183579806214,
+      "openml_23517_numerai28_6": 0.017244601328903656
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.008569322386679002,
+    "ci95_low": -0.012121212121212133,
+    "ci95_high": 0.019240183579806214,
+    "ci_width": 0.03136139570101835,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.4609375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_xgb_singleton_rate",
+      "seed_uint32": 1472831233
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_xgb_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0018750000000000045,
+      "openml_24_mushroom": 0.10566153846153847,
+      "openml_1486_nomao": -0.0059045408385318245,
+      "openml_1489_phoneme": -0.060592044403330256,
+      "openml_1590_adult": 0.04196949534240961,
+      "openml_4534_phishingwebsite": -0.012121212121212133,
+      "openml_23512_higgs": -0.019240183579806235,
+      "openml_23517_numerai28_6": -0.017244601328903663
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.009012876479871978,
+    "ci95_low": -0.019240183579806235,
+    "ci95_high": 0.04196949534240961,
+    "ci_width": 0.06120967892221585,
+    "direction_count": {
+      "positive": 3,
+      "negative": 5,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.7421875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_xgb_average_set_size",
+      "seed_uint32": 4261030706
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_xgb_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0018750000000000017,
+      "openml_24_mushroom": -0.10566153846153845,
+      "openml_1486_nomao": 0.005904540838531842,
+      "openml_1489_phoneme": 0.022664199814986123,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.012121212121212126,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.0018750000000000017,
+    "ci95_high": 0.012121212121212126,
+    "ci_width": 0.013996212121212128,
+    "direction_count": {
+      "positive": 3,
+      "negative": 2,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.8125,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_xgb_empty_rate",
+      "seed_uint32": 665483581
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_gl_m100_tabpfn_minus_xgb_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at global_split_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.037927844588344126,
+      "openml_1590_adult": 0.041969495342409666,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.019240183579806218,
+      "openml_23517_numerai28_6": -0.017244601328903653
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.019240183579806218,
+    "ci95_high": 0.0,
+    "ci_width": 0.019240183579806218,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.875,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_gl_m100_tabpfn_minus_xgb_doubleton_rate",
+      "seed_uint32": 2072820297
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.009150326797385611,
+      "openml_24_mushroom": 0.008045977011494254,
+      "openml_1486_nomao": 0.003961401726764846,
+      "openml_1489_phoneme": -0.011671924290220848,
+      "openml_1590_adult": 0.0007698887938409227,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": 0.013391022174148181,
+      "openml_23517_numerai28_6": -0.009693663449433464
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.00038494439692046136,
+    "ci95_low": -0.009693663449433464,
+    "ci95_high": 0.008045977011494254,
+    "ci_width": 0.01773964046092772,
+    "direction_count": {
+      "positive": 4,
+      "negative": 3,
+      "zero": 1
+    },
+    "wilcoxon_p_exact_two_sided": 0.9375,
+    "wilcoxon_n_zero_discarded": 1,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_coverage_minority",
+      "seed_uint32": 155292342
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.01107784431137726,
+      "openml_24_mushroom": 0.0015439429928741145,
+      "openml_1486_nomao": 0.005239642567018687,
+      "openml_1489_phoneme": 0.006413612565445026,
+      "openml_1590_adult": -0.0015071995693715424,
+      "openml_4534_phishingwebsite": -0.00016246953696180677,
+      "openml_23512_higgs": 0.0038398456343463174,
+      "openml_23517_numerai28_6": 0.011200164406083046
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.004539744100682502,
+    "ci95_low": -0.00016246953696180677,
+    "ci95_high": 0.01107784431137726,
+    "ci_width": 0.011240313848339067,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0390625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_coverage_majority",
+      "seed_uint32": 337074686
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.007524167351571354,
+      "openml_24_mushroom": 0.0028641591054565096,
+      "openml_1486_nomao": 0.005990600035728455,
+      "openml_1489_phoneme": 0.017117693692503332,
+      "openml_1590_adult": -0.0013188111348673703,
+      "openml_4534_phishingwebsite": 0.00027868499146207484,
+      "openml_23512_higgs": 0.011289000690585915,
+      "openml_23517_numerai28_6": -0.006019518651690758
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0044273795705924825,
+    "ci95_low": -0.0013188111348673703,
+    "ci95_high": 0.011289000690585915,
+    "ci_width": 0.012607811825453286,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_coverage_disparity",
+      "seed_uint32": 2091546093
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.011093750000000024,
+      "openml_24_mushroom": 0.0046769230769230785,
+      "openml_1486_nomao": -0.012926156970839996,
+      "openml_1489_phoneme": 0.344218316373728,
+      "openml_1590_adult": 0.060620329614085366,
+      "openml_4534_phishingwebsite": -0.03559475350520127,
+      "openml_23512_higgs": 0.1842427332993371,
+      "openml_23517_numerai28_6": -0.01070909468438538
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.003016085803731151,
+    "ci95_low": -0.012926156970839996,
+    "ci95_high": 0.1842427332993371,
+    "ci_width": 0.1971688902701771,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_singleton_rate",
+      "seed_uint32": 2667122387
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.011093750000000024,
+      "openml_24_mushroom": 0.0046769230769230785,
+      "openml_1486_nomao": -0.012926156970839996,
+      "openml_1489_phoneme": -0.35198889916743764,
+      "openml_1590_adult": -0.060620329614085366,
+      "openml_4534_phishingwebsite": -0.03559475350520127,
+      "openml_23512_higgs": -0.18424273329933707,
+      "openml_23517_numerai28_6": 0.010709094684385346
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.02426045523802063,
+    "ci95_low": -0.18424273329933707,
+    "ci95_high": 0.0046769230769230785,
+    "ci_width": 0.18891965637626015,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0390625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_average_set_size",
+      "seed_uint32": 3676174650
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.01109375,
+      "openml_24_mushroom": -0.004676923076923079,
+      "openml_1486_nomao": 0.01292615697083998,
+      "openml_1489_phoneme": 0.0038852913968547642,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.03559475350520126,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0019426456984273821,
+    "ci95_low": 0.0,
+    "ci95_high": 0.01292615697083998,
+    "ci_width": 0.01292615697083998,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.1875,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_empty_rate",
+      "seed_uint32": 3715976360
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.3481036077705828,
+      "openml_1590_adult": -0.060620329614085366,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.1842427332993371,
+      "openml_23517_numerai28_6": 0.010709094684385401
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.1842427332993371,
+    "ci95_high": 0.0,
+    "ci_width": 0.1842427332993371,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_doubleton_rate",
+      "seed_uint32": 420325587
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_xgb_minus_lr_threshold_sum",
+    "metric": "threshold_sum",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.39320168844541054,
+      "openml_24_mushroom": -0.033318652012549334,
+      "openml_1486_nomao": -0.23686466034610235,
+      "openml_1489_phoneme": -0.26637889741643983,
+      "openml_1590_adult": -0.04690632748048658,
+      "openml_4534_phishingwebsite": -0.30182486406923115,
+      "openml_23512_higgs": 0.10722289517219472,
+      "openml_23517_numerai28_6": 0.07239721423321947
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.14188549391329447,
+    "ci95_low": -0.30182486406923115,
+    "ci95_high": 0.07239721423321947,
+    "ci_width": 0.37422207830245063,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_xgb_minus_lr_threshold_sum",
+      "seed_uint32": 4170837653
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.013398692810457514,
+      "openml_24_mushroom": 0.10574712643678161,
+      "openml_1486_nomao": 0.009141696292534274,
+      "openml_1489_phoneme": -0.005047318611987395,
+      "openml_1590_adult": 0.00029940119760480944,
+      "openml_4534_phishingwebsite": -0.003061224489795933,
+      "openml_23512_higgs": 0.02724716062736615,
+      "openml_23517_numerai28_6": 0.00023080151070078436
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0002651013541527969,
+    "ci95_low": -0.005047318611987395,
+    "ci95_high": 0.02724716062736615,
+    "ci_width": 0.032294479239353545,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.546875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_coverage_minority",
+      "seed_uint32": 3909731807
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.00628742514970061,
+      "openml_24_mushroom": 0.09133016627078386,
+      "openml_1486_nomao": 0.0026198212835093606,
+      "openml_1489_phoneme": 0.0062827225130889786,
+      "openml_1590_adult": -0.002637599246400224,
+      "openml_4534_phishingwebsite": -0.0047928513403736935,
+      "openml_23512_higgs": 0.010188133140376244,
+      "openml_23517_numerai28_6": 0.004192355117139346
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.005237538815114162,
+    "ci95_low": -0.002637599246400224,
+    "ci95_high": 0.010188133140376244,
+    "ci_width": 0.012825732386776468,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.109375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_coverage_majority",
+      "seed_uint32": 2128693545
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.012109115103127056,
+      "openml_24_mushroom": -0.026463932193312167,
+      "openml_1486_nomao": -0.009466728194405648,
+      "openml_1489_phoneme": 0.017102416304688905,
+      "openml_1590_adult": 0.005976518040681988,
+      "openml_4534_phishingwebsite": 0.013635007211658012,
+      "openml_23512_higgs": 0.016728078462250086,
+      "openml_23517_numerai28_6": 0.003039261697332385
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.009042816571904522,
+    "ci95_low": -0.009466728194405648,
+    "ci95_high": 0.016728078462250086,
+    "ci_width": 0.026194806656655734,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3828125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_coverage_disparity",
+      "seed_uint32": 272703591
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.015781250000000014,
+      "openml_24_mushroom": 0.09827692307692307,
+      "openml_1486_nomao": -0.014246336863484699,
+      "openml_1489_phoneme": 0.3737280296022201,
+      "openml_1590_adult": 0.028600675606510383,
+      "openml_4534_phishingwebsite": -0.04513794663048395,
+      "openml_23512_higgs": 0.1847322794492606,
+      "openml_23517_numerai28_6": -0.003939991694352161
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.01233034195607911,
+    "ci95_low": -0.015781250000000014,
+    "ci95_high": 0.1847322794492606,
+    "ci_width": 0.20051352944926062,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3828125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_singleton_rate",
+      "seed_uint32": 1567560056
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.015781250000000014,
+      "openml_24_mushroom": 0.09827692307692307,
+      "openml_1486_nomao": -0.014246336863484699,
+      "openml_1489_phoneme": -0.4085106382978724,
+      "openml_1590_adult": -0.028600675606510383,
+      "openml_4534_phishingwebsite": -0.04513794663048395,
+      "openml_23512_higgs": -0.18473227944926057,
+      "openml_23517_numerai28_6": 0.00393999169435213
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0221909628032552,
+    "ci95_low": -0.18473227944926057,
+    "ci95_high": 0.00393999169435213,
+    "ci_width": 0.1886722711436127,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_average_set_size",
+      "seed_uint32": 4041719755
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.015781249999999997,
+      "openml_24_mushroom": -0.09827692307692307,
+      "openml_1486_nomao": 0.014246336863484695,
+      "openml_1489_phoneme": 0.017391304347826087,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.04513794663048394,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.007123168431742348,
+    "ci95_low": 0.0,
+    "ci95_high": 0.017391304347826087,
+    "ci_width": 0.017391304347826087,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_empty_rate",
+      "seed_uint32": 144269920
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.3911193339500463,
+      "openml_1590_adult": -0.028600675606510396,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.1847322794492606,
+      "openml_23517_numerai28_6": 0.003939991694352174
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.1847322794492606,
+    "ci95_high": 0.0,
+    "ci_width": 0.1847322794492606,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_doubleton_rate",
+      "seed_uint32": 3768699477
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_lr_threshold_sum",
+    "metric": "threshold_sum",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.47201255909284096,
+      "openml_24_mushroom": -0.038647134401999406,
+      "openml_1486_nomao": -0.24043198343474828,
+      "openml_1489_phoneme": -0.43592904655918197,
+      "openml_1590_adult": -0.010275499919465724,
+      "openml_4534_phishingwebsite": -0.5326184713041859,
+      "openml_23512_higgs": 0.178118041005687,
+      "openml_23517_numerai28_6": -0.007486939371287971
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.13953955891837383,
+    "ci95_low": -0.47201255909284096,
+    "ci95_high": -0.007486939371287971,
+    "ci_width": 0.464525619721553,
+    "direction_count": {
+      "positive": 1,
+      "negative": 7,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0546875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_lr_threshold_sum",
+      "seed_uint32": 2402306148
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.004248366013071903,
+      "openml_24_mushroom": 0.09770114942528735,
+      "openml_1486_nomao": 0.005180294565769428,
+      "openml_1489_phoneme": 0.0066246056782334525,
+      "openml_1590_adult": -0.0004704875962361132,
+      "openml_4534_phishingwebsite": -0.003061224489795933,
+      "openml_23512_higgs": 0.01385613845321797,
+      "openml_23517_numerai28_6": 0.009924464960134249
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.00590245012200144,
+    "ci95_low": -0.003061224489795933,
+    "ci95_high": 0.01385613845321797,
+    "ci_width": 0.016917362943013905,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.109375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_coverage_minority",
+      "seed_uint32": 1883673060
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.004790419161676651,
+      "openml_24_mushroom": 0.08978622327790974,
+      "openml_1486_nomao": -0.002619821283509327,
+      "openml_1489_phoneme": -0.00013089005235604744,
+      "openml_1590_adult": -0.0011303996770286816,
+      "openml_4534_phishingwebsite": -0.004630381803411887,
+      "openml_23512_higgs": 0.006348287506029926,
+      "openml_23517_numerai28_6": -0.007007809288943701
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0018751104802690044,
+    "ci95_low": -0.004790419161676651,
+    "ci95_high": 0.006348287506029926,
+    "ci_width": 0.011138706667706576,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_coverage_majority",
+      "seed_uint32": 1524598405
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.004584947751555701,
+      "openml_24_mushroom": -0.029328091298768677,
+      "openml_1486_nomao": -0.015457328230134104,
+      "openml_1489_phoneme": -1.5277387814427446e-05,
+      "openml_1590_adult": 0.007295329175549359,
+      "openml_4534_phishingwebsite": 0.013356322220195938,
+      "openml_23512_higgs": 0.005439077771664169,
+      "openml_23517_numerai28_6": 0.009058780349023143
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0050120127616099346,
+    "ci95_low": -0.015457328230134104,
+    "ci95_high": 0.009058780349023143,
+    "ci_width": 0.024516108579157245,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.84375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_coverage_disparity",
+      "seed_uint32": 2492562640
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0046874999999999886,
+      "openml_24_mushroom": 0.09359999999999999,
+      "openml_1486_nomao": -0.0013201798926447017,
+      "openml_1489_phoneme": 0.029509713228492107,
+      "openml_1590_adult": -0.032019654007574984,
+      "openml_4534_phishingwebsite": -0.009543193125282678,
+      "openml_23512_higgs": 0.0004895461499235087,
+      "openml_23517_numerai28_6": 0.0067691029900332185
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0004153168713605965,
+    "ci95_low": -0.009543193125282678,
+    "ci95_high": 0.029509713228492107,
+    "ci_width": 0.039052906353774786,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.9453125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_singleton_rate",
+      "seed_uint32": 3128171035
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0046874999999999886,
+      "openml_24_mushroom": 0.09359999999999999,
+      "openml_1486_nomao": -0.0013201798926447017,
+      "openml_1489_phoneme": -0.056521739130434775,
+      "openml_1590_adult": 0.032019654007574984,
+      "openml_4534_phishingwebsite": -0.009543193125282678,
+      "openml_23512_higgs": -0.0004895461499234921,
+      "openml_23517_numerai28_6": -0.006769102990033216
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.003003839946322345,
+    "ci95_low": -0.009543193125282678,
+    "ci95_high": 0.032019654007574984,
+    "ci_width": 0.04156284713285766,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_average_set_size",
+      "seed_uint32": 319069302
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.004687499999999999,
+      "openml_24_mushroom": -0.09359999999999999,
+      "openml_1486_nomao": 0.0013201798926447128,
+      "openml_1489_phoneme": 0.013506012950971322,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.009543193125282675,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0006600899463223564,
+    "ci95_low": 0.0,
+    "ci95_high": 0.009543193125282675,
+    "ci_width": 0.009543193125282675,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_empty_rate",
+      "seed_uint32": 518025978
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.04301572617946346,
+      "openml_1590_adult": 0.032019654007574984,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.0004895461499235143,
+      "openml_23517_numerai28_6": -0.006769102990033226
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.006769102990033226,
+    "ci95_high": 0.0,
+    "ci_width": 0.006769102990033226,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_doubleton_rate",
+      "seed_uint32": 3027186042
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m50_tabpfn_minus_xgb_threshold_sum",
+    "metric": "threshold_sum",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=50",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.07881087064743042,
+      "openml_24_mushroom": -0.005328482389450074,
+      "openml_1486_nomao": -0.003567323088645935,
+      "openml_1489_phoneme": -0.16955014914274216,
+      "openml_1590_adult": 0.03663082756102085,
+      "openml_4534_phishingwebsite": -0.23079360723495485,
+      "openml_23512_higgs": 0.07089514583349228,
+      "openml_23517_numerai28_6": -0.07988415360450744
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.04206967651844025,
+    "ci95_low": -0.16955014914274216,
+    "ci95_high": 0.03663082756102085,
+    "ci_width": 0.206180976703763,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m50_tabpfn_minus_xgb_threshold_sum",
+      "seed_uint32": 242139183
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -1.1102230246251566e-17,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.00954799390553578,
+      "openml_1489_phoneme": -0.0012618296529968375,
+      "openml_1590_adult": 0.005389221556886236,
+      "openml_4534_phishingwebsite": -0.005306122448979611,
+      "openml_23512_higgs": 0.005635478637101121,
+      "openml_23517_numerai28_6": -0.014540495174150236
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -5.551115123125783e-18,
+    "ci95_low": -0.005306122448979611,
+    "ci95_high": 0.005635478637101121,
+    "ci_width": 0.010941601086080732,
+    "direction_count": {
+      "positive": 3,
+      "negative": 4,
+      "zero": 1
+    },
+    "wilcoxon_p_exact_two_sided": 0.9375,
+    "wilcoxon_n_zero_discarded": 1,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_coverage_minority",
+      "seed_uint32": 1610932759
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.01107784431137726,
+      "openml_24_mushroom": 0.0015439429928741145,
+      "openml_1486_nomao": 0.005239642567018687,
+      "openml_1489_phoneme": 0.006413612565445026,
+      "openml_1590_adult": -0.0015071995693715424,
+      "openml_4534_phishingwebsite": -0.00016246953696180677,
+      "openml_23512_higgs": 0.0038398456343463174,
+      "openml_23517_numerai28_6": 0.011200164406083046
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.004539744100682502,
+    "ci95_low": -0.00016246953696180677,
+    "ci95_high": 0.01107784431137726,
+    "ci_width": 0.011240313848339067,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0390625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_coverage_majority",
+      "seed_uint32": 4057938203
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.009281437125748504,
+      "openml_24_mushroom": -0.004573280791644307,
+      "openml_1486_nomao": -0.0028463730470546732,
+      "openml_1489_phoneme": 0.0054986209060729485,
+      "openml_1590_adult": 0.0020869616669538906,
+      "openml_4534_phishingwebsite": -0.01397851423266302,
+      "openml_23512_higgs": -0.0008545681333334221,
+      "openml_23517_numerai28_6": 0.011228157594579624
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0006161967668102343,
+    "ci95_low": -0.004573280791644307,
+    "ci95_high": 0.009281437125748504,
+    "ci_width": 0.01385471791739281,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.84375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_coverage_disparity",
+      "seed_uint32": 206655839
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0046875,
+      "openml_24_mushroom": 0.0007999999999999674,
+      "openml_1486_nomao": -0.011185260409110675,
+      "openml_1489_phoneme": 0.3410730804810361,
+      "openml_1590_adult": 0.052277612856996614,
+      "openml_4534_phishingwebsite": -0.03844414292175487,
+      "openml_23512_higgs": 0.1975981642019377,
+      "openml_23517_numerai28_6": -0.005684177740863791
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0019437500000000162,
+    "ci95_low": -0.011185260409110675,
+    "ci95_high": 0.1975981642019377,
+    "ci_width": 0.20878342461104837,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_singleton_rate",
+      "seed_uint32": 2217461532
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0046875,
+      "openml_24_mushroom": 0.0007999999999999674,
+      "openml_1486_nomao": -0.011185260409110675,
+      "openml_1489_phoneme": -0.3445883441258094,
+      "openml_1590_adult": -0.052277612856996655,
+      "openml_4534_phishingwebsite": -0.03844414292175487,
+      "openml_23512_higgs": -0.19759816420193782,
+      "openml_23517_numerai28_6": 0.00568417774086385
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.024814701665432773,
+    "ci95_low": -0.19759816420193782,
+    "ci95_high": 0.0007999999999999674,
+    "ci_width": 0.1983981642019378,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.0546875,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_average_set_size",
+      "seed_uint32": 2201203055
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.004687500000000001,
+      "openml_24_mushroom": -0.0008000000000000021,
+      "openml_1486_nomao": 0.01118526040911069,
+      "openml_1489_phoneme": 0.001757631822386679,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.03844414292175487,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0008788159111933396,
+    "ci95_low": 0.0,
+    "ci95_high": 0.01118526040911069,
+    "ci_width": 0.01118526040911069,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.125,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_empty_rate",
+      "seed_uint32": 3903206504
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.34283071230342277,
+      "openml_1590_adult": -0.05227761285699663,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.19759816420193776,
+      "openml_23517_numerai28_6": 0.00568417774086376
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.19759816420193776,
+    "ci95_high": 0.0,
+    "ci_width": 0.19759816420193776,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_doubleton_rate",
+      "seed_uint32": 2065574825
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_xgb_minus_lr_threshold_sum",
+    "metric": "threshold_sum",
+    "comparison": "RQ3-C: xgboost minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.36924764324605563,
+      "openml_24_mushroom": -0.029984430638316427,
+      "openml_1486_nomao": -0.23997613076035024,
+      "openml_1489_phoneme": -0.25003255393463736,
+      "openml_1590_adult": -0.038753613034604936,
+      "openml_4534_phishingwebsite": -0.36376767321024667,
+      "openml_23512_higgs": 0.10208112833940897,
+      "openml_23517_numerai28_6": 0.07133463510592682
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.1393648718974776,
+    "ci95_low": -0.36376767321024667,
+    "ci95_high": 0.07133463510592682,
+    "ci_width": 0.43510230831617347,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_xgb_minus_lr_threshold_sum",
+      "seed_uint32": 3707755073
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.004901960784313719,
+      "openml_24_mushroom": 0.10817369093231162,
+      "openml_1486_nomao": 0.009547993905535812,
+      "openml_1489_phoneme": -0.0003154574132492205,
+      "openml_1590_adult": 0.010222412318220686,
+      "openml_4534_phishingwebsite": -0.01061224489795919,
+      "openml_23512_higgs": 0.01312060573282856,
+      "openml_23517_numerai28_6": -0.004846831724716738
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.007224977344924766,
+    "ci95_low": -0.004846831724716738,
+    "ci95_high": 0.01312060573282856,
+    "ci_width": 0.0179674374575453,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.25,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_coverage_minority",
+      "seed_uint32": 715885192
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.00628742514970061,
+      "openml_24_mushroom": 0.09133016627078386,
+      "openml_1486_nomao": 0.0026198212835093606,
+      "openml_1489_phoneme": 0.0062827225130889786,
+      "openml_1590_adult": -0.002637599246400224,
+      "openml_4534_phishingwebsite": -0.0047928513403736935,
+      "openml_23512_higgs": 0.010188133140376244,
+      "openml_23517_numerai28_6": 0.004192355117139346
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.005237538815114162,
+    "ci95_low": -0.002637599246400224,
+    "ci95_high": 0.010188133140376244,
+    "ci_width": 0.012825732386776468,
+    "direction_count": {
+      "positive": 6,
+      "negative": 2,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.109375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_coverage_majority",
+      "seed_uint32": 2120972766
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.00744002191695039,
+      "openml_24_mushroom": -0.030082998880607215,
+      "openml_1486_nomao": -0.010842706549403646,
+      "openml_1489_phoneme": 0.004958131699340962,
+      "openml_1590_adult": 0.002172383993763449,
+      "openml_4534_phishingwebsite": -0.007448067773006861,
+      "openml_23512_higgs": 0.0019571680184879868,
+      "openml_23517_numerai28_6": -0.0013921393815868321
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0002825143184505773,
+    "ci95_low": -0.010842706549403646,
+    "ci95_high": 0.004958131699340962,
+    "ci_width": 0.01580083824874461,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_coverage_disparity",
+      "seed_uint32": 2451447758
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.004999999999999993,
+      "openml_24_mushroom": 0.09944615384615382,
+      "openml_1486_nomao": -0.014173799506745976,
+      "openml_1489_phoneme": 0.367622571692877,
+      "openml_1590_adult": 0.014740505681236572,
+      "openml_4534_phishingwebsite": -0.04825870646766169,
+      "openml_23512_higgs": 0.2103824579296277,
+      "openml_23517_numerai28_6": 0.0017286129568106295
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0082345593190236,
+    "ci95_low": -0.014173799506745976,
+    "ci95_high": 0.2103824579296277,
+    "ci_width": 0.22455625743637367,
+    "direction_count": {
+      "positive": 5,
+      "negative": 3,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_singleton_rate",
+      "seed_uint32": 2285290674
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.004999999999999993,
+      "openml_24_mushroom": 0.09944615384615382,
+      "openml_1486_nomao": -0.014173799506745976,
+      "openml_1489_phoneme": -0.4042553191489362,
+      "openml_1590_adult": -0.014740505681236572,
+      "openml_4534_phishingwebsite": -0.04825870646766169,
+      "openml_23512_higgs": -0.21038245792962776,
+      "openml_23517_numerai28_6": -0.0017286129568106156
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.014457152593991274,
+    "ci95_low": -0.21038245792962776,
+    "ci95_high": -0.0017286129568106156,
+    "ci_width": 0.20865384497281714,
+    "direction_count": {
+      "positive": 1,
+      "negative": 7,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.109375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_average_set_size",
+      "seed_uint32": 220365310
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.005000000000000003,
+      "openml_24_mushroom": -0.09944615384615384,
+      "openml_1486_nomao": 0.014173799506745976,
+      "openml_1489_phoneme": 0.0183163737280296,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.04825870646766169,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0025000000000000014,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0183163737280296,
+    "ci_width": 0.0183163737280296,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_empty_rate",
+      "seed_uint32": 3918894932
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.3859389454209066,
+      "openml_1590_adult": -0.014740505681236563,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.21038245792962776,
+      "openml_23517_numerai28_6": -0.001728612956810638
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.000864306478405319,
+    "ci95_low": -0.21038245792962776,
+    "ci95_high": 0.0,
+    "ci_width": 0.21038245792962776,
+    "direction_count": {
+      "positive": 0,
+      "negative": 4,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.125,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_doubleton_rate",
+      "seed_uint32": 1273198510
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_lr_threshold_sum",
+    "metric": "threshold_sum",
+    "comparison": "RQ3-C: tabpfn minus logistic_regression at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.45069730092465976,
+      "openml_24_mushroom": -0.03437468227482156,
+      "openml_1486_nomao": -0.24808340553108693,
+      "openml_1489_phoneme": -0.4512167670961058,
+      "openml_1590_adult": 0.005277855744243709,
+      "openml_4534_phishingwebsite": -0.5986862675705982,
+      "openml_23512_higgs": 0.16205984739506157,
+      "openml_23517_numerai28_6": -0.007947413238685308
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.14122904390295424,
+    "ci95_low": -0.4512167670961058,
+    "ci95_high": 0.005277855744243709,
+    "ci_width": 0.45649462284034953,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.078125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_lr_threshold_sum",
+      "seed_uint32": 4086049300
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_coverage_minority",
+    "metric": "coverage_minority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.004901960784313731,
+      "openml_24_mushroom": 0.10817369093231162,
+      "openml_1486_nomao": 3.3306690738754695e-17,
+      "openml_1489_phoneme": 0.0009463722397476171,
+      "openml_1590_adult": 0.00483319076133445,
+      "openml_4534_phishingwebsite": -0.005306122448979577,
+      "openml_23512_higgs": 0.007485127095727439,
+      "openml_23517_numerai28_6": 0.009693663449433499
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.00486757577282409,
+    "ci95_low": 3.3306690738754695e-17,
+    "ci95_high": 0.009693663449433499,
+    "ci_width": 0.009693663449433466,
+    "direction_count": {
+      "positive": 7,
+      "negative": 1,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.078125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_coverage_minority",
+      "seed_uint32": 966786502
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_coverage_majority",
+    "metric": "coverage_majority",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.004790419161676651,
+      "openml_24_mushroom": 0.08978622327790974,
+      "openml_1486_nomao": -0.002619821283509327,
+      "openml_1489_phoneme": -0.00013089005235604744,
+      "openml_1590_adult": -0.0011303996770286816,
+      "openml_4534_phishingwebsite": -0.004630381803411887,
+      "openml_23512_higgs": 0.006348287506029926,
+      "openml_23517_numerai28_6": -0.007007809288943701
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0018751104802690044,
+    "ci95_low": -0.004790419161676651,
+    "ci95_high": 0.006348287506029926,
+    "ci_width": 0.011138706667706576,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_coverage_majority",
+      "seed_uint32": 370931458
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_coverage_disparity",
+    "metric": "coverage_disparity",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.0018414152087981139,
+      "openml_24_mushroom": -0.025509718088962907,
+      "openml_1486_nomao": -0.007996333502348973,
+      "openml_1489_phoneme": -0.0005404892067319867,
+      "openml_1590_adult": 8.542232680955886e-05,
+      "openml_4534_phishingwebsite": 0.006530446459656158,
+      "openml_23512_higgs": 0.002811736151821409,
+      "openml_23517_numerai28_6": -0.012620296976166456
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.0011909522077650503,
+    "ci95_low": -0.012620296976166456,
+    "ci95_high": 0.002811736151821409,
+    "ci_width": 0.015432033127987865,
+    "direction_count": {
+      "positive": 3,
+      "negative": 5,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.3125,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_coverage_disparity",
+      "seed_uint32": 3122636101
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_singleton_rate",
+    "metric": "singleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.00031249999999999334,
+      "openml_24_mushroom": 0.09864615384615386,
+      "openml_1486_nomao": -0.002988539097635301,
+      "openml_1489_phoneme": 0.02654949121184088,
+      "openml_1590_adult": -0.037537107175760046,
+      "openml_4534_phishingwebsite": -0.009814563545906829,
+      "openml_23512_higgs": 0.012784293727689976,
+      "openml_23517_numerai28_6": 0.007412790697674421
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0035501453488372137,
+    "ci95_low": -0.009814563545906829,
+    "ci95_high": 0.02654949121184088,
+    "ci_width": 0.036364054757747705,
+    "direction_count": {
+      "positive": 4,
+      "negative": 4,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_singleton_rate",
+      "seed_uint32": 2777480582
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_average_set_size",
+    "metric": "average_set_size",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.00031249999999999334,
+      "openml_24_mushroom": 0.09864615384615386,
+      "openml_1486_nomao": -0.002988539097635301,
+      "openml_1489_phoneme": -0.059666975023126734,
+      "openml_1590_adult": 0.03753710717576009,
+      "openml_4534_phishingwebsite": -0.009814563545906829,
+      "openml_23512_higgs": -0.012784293727689943,
+      "openml_23517_numerai28_6": -0.007412790697674465
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.005200664897654883,
+    "ci95_low": -0.012784293727689943,
+    "ci95_high": 0.03753710717576009,
+    "ci_width": 0.05032140090345003,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.640625,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_average_set_size",
+      "seed_uint32": 332726838
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_empty_rate",
+    "metric": "empty_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0003125000000000017,
+      "openml_24_mushroom": -0.09864615384615384,
+      "openml_1486_nomao": 0.0029885390976352845,
+      "openml_1489_phoneme": 0.01655874190564292,
+      "openml_1590_adult": 0.0,
+      "openml_4534_phishingwebsite": 0.00981456354590683,
+      "openml_23512_higgs": 0.0,
+      "openml_23517_numerai28_6": 0.0
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.00015625000000000084,
+    "ci95_low": 0.0,
+    "ci95_high": 0.00981456354590683,
+    "ci_width": 0.00981456354590683,
+    "direction_count": {
+      "positive": 4,
+      "negative": 1,
+      "zero": 3
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 3,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_empty_rate",
+      "seed_uint32": 2993727878
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_doubleton_rate",
+    "metric": "doubleton_rate",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": 0.0,
+      "openml_24_mushroom": 0.0,
+      "openml_1486_nomao": 0.0,
+      "openml_1489_phoneme": -0.04310823311748382,
+      "openml_1590_adult": 0.03753710717576005,
+      "openml_4534_phishingwebsite": 0.0,
+      "openml_23512_higgs": -0.012784293727689956,
+      "openml_23517_numerai28_6": -0.007412790697674398
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": 0.0,
+    "ci95_low": -0.012784293727689956,
+    "ci95_high": 0.0,
+    "ci_width": 0.012784293727689956,
+    "direction_count": {
+      "positive": 1,
+      "negative": 3,
+      "zero": 4
+    },
+    "wilcoxon_p_exact_two_sided": 0.625,
+    "wilcoxon_n_zero_discarded": 4,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_doubleton_rate",
+      "seed_uint32": 2294197320
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  },
+  {
+    "endpoint_tag": "rq3c_cc_m100_tabpfn_minus_xgb_threshold_sum",
+    "metric": "threshold_sum",
+    "comparison": "RQ3-C: tabpfn minus xgboost at class_conditional_cp, m=100",
+    "family": "C_exploratory",
+    "preregistered_endpoint": false,
+    "inference_status": "exploratory_not_preregistered",
+    "d_by_dataset": {
+      "openml_3_kr_vs_kp": -0.08144965767860413,
+      "openml_24_mushroom": -0.004390251636505127,
+      "openml_1486_nomao": -0.008107274770736694,
+      "openml_1489_phoneme": -0.2011842131614685,
+      "openml_1590_adult": 0.04403146877884865,
+      "openml_4534_phishingwebsite": -0.23491859436035156,
+      "openml_23512_higgs": 0.05997871905565262,
+      "openml_23517_numerai28_6": -0.07928204834461212
+    },
+    "per_pipeline_seed_mean_d": null,
+    "effect_median_dj": -0.04369466155767441,
+    "ci95_low": -0.2011842131614685,
+    "ci95_high": 0.04403146877884865,
+    "ci_width": 0.24521568194031715,
+    "direction_count": {
+      "positive": 2,
+      "negative": 6,
+      "zero": 0
+    },
+    "wilcoxon_p_exact_two_sided": 0.1484375,
+    "wilcoxon_n_zero_discarded": 0,
+    "bootstrap": {
+      "replicates": 20000,
+      "rng": "numpy default_rng",
+      "seed_convention": "D01-derived (identical to Stage 10 convention)",
+      "seed_input_string": "v1.1|EIGHT_DATASET|0|d08_bootstrap_rq3c_cc_m100_tabpfn_minus_xgb_threshold_sum",
+      "seed_uint32": 1384633521
+    },
+    "holm_p_within_family": 1.0,
+    "holm_family_size": 90
+  }
+]

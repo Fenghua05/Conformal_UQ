@@ -1,0 +1,10 @@
+# Evidence lock for the observed Stage 03 local environment; it is not an install command.
+# No package was installed or changed when this file was created.
+numpy==2.3.5
+pandas==2.3.3
+scikit-learn==1.7.2
+xgboost==3.2.0
+torch==2.11.0+cpu
+pyarrow==21.0.0
+PyYAML==6.0.2
+# tabpfn: NOT_INSTALLED_PENDING_EXPLICIT_AUTHORIZATION (version/checkpoint/device unresolved)
