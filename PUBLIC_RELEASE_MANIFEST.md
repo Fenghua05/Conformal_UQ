@@ -10,7 +10,7 @@ Release scope: public reproducibility package, prepared 2026-09-04.
 - Selected reproducibility configurations and schemas under `configs/`.
 - Aggregate derived results under `results/`.
 - Figure and table sources/exports under `manuscript/figures/` and `manuscript/tables/`.
-- Latest manuscript source and editable Word derivative under `manuscript/`.
+- Latest manuscript source under `manuscript/`.
 - Root dependency lock and public documentation.
 
 ## Excluded by design
@@ -23,4 +23,4 @@ No credentials, tokens, private keys, or environment files are part of the relea
 
 The public manuscript copy is placed at `manuscript/manuscript_polished_v1.5.md` so its figure links resolve against `manuscript/figures/`. The source copy in the internal delivery workspace is not published.
 
-The v1.5 PDF and PDF-matched Word derivative referenced by internal state were not present at their declared paths during this audit, so they are not included. The confirmed v1.5 Markdown and editable Word files are the published manuscript materials.
+The v1.5 PDF and Word derivatives are not included because they are not final versions. Only the confirmed v1.5 Markdown source is published as manuscript text.

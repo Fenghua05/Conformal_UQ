@@ -2,7 +2,7 @@
 
 This repository contains the public reproducibility package for a study of label-conditional conformal prediction when minority-class calibration data are scarce.
 
-The scientific analysis is frozen at the released result grid. The repository contains code, tests, locked protocols, configuration schemas, derived aggregate results, figure/table sources, and the latest editable manuscript materials.
+The scientific analysis is frozen at the released result grid. The repository contains code, tests, locked protocols, configuration schemas, derived aggregate results, figure/table sources, and the latest manuscript source.
 
 ## Repository contents
 
@@ -13,7 +13,6 @@ The scientific analysis is frozen at the released result grid. The repository co
 - `results/` — aggregate derived results and quality-control summaries.
 - `manuscript/figures/` and `manuscript/tables/` — figure/table sources and exports.
 - `manuscript/manuscript_polished_v1.5.md` — the latest manuscript source.
-- `manuscript/manuscript_polished_v1.5.docx` — the latest editable Word manuscript.
 - `cloud/tabpfn_stage08/` — user-operated TabPFN cloud-run helper and guide.
 
 ## Data and models
@@ -36,7 +35,7 @@ The scripts under `src/` document the staged workflow. Data-dependent runs expec
 
 The released aggregate result table contains cell-level metrics and provenance fields, not sample-level records or prediction caches. Figures can be regenerated from the public result/source files using the scripts documented in `src/` and the figure metadata under `manuscript/figures/`.
 
-The manuscript source and editable Word derivative are provided for review and reuse of the released research record. A public repository URL and archival DOI remain author-supplied publication metadata.
+The manuscript Markdown source is provided for review and reuse of the released research record. The v1.5 Word and PDF derivatives are intentionally withheld until final versions are approved. A public repository URL and archival DOI remain author-supplied publication metadata.
 
 ## License
 
